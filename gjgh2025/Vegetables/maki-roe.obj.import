@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmyc7c7dl017w"
+path="res://.godot/imported/maki-roe.obj-2a036b853e5544ecb06d919392609efa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/maki-roe.obj-2a036b853e5544ecb06d919392609efa.mesh"]
+
+source_file="res://Vegetables/maki-roe.obj"
+dest_files=["res://.godot/imported/maki-roe.obj-2a036b853e5544ecb06d919392609efa.mesh", "res://.godot/imported/maki-roe.obj-2a036b853e5544ecb06d919392609efa.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

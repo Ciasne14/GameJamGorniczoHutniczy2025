@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ca1arvotovbgs"
+path="res://.godot/imported/onion.obj-38a771eb25f0fbfea9ff53f991e6a8ec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/onion.obj-38a771eb25f0fbfea9ff53f991e6a8ec.mesh"]
+
+source_file="res://Vegetables/onion.obj"
+dest_files=["res://.godot/imported/onion.obj-38a771eb25f0fbfea9ff53f991e6a8ec.mesh", "res://.godot/imported/onion.obj-38a771eb25f0fbfea9ff53f991e6a8ec.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

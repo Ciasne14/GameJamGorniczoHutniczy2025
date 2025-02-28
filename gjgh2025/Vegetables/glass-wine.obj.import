@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b2cs10d1u5cv3"
+path="res://.godot/imported/glass-wine.obj-9d910a566d62afb23d2cd297952ac359.mesh"
+
+[deps]
+
+files=["res://.godot/imported/glass-wine.obj-9d910a566d62afb23d2cd297952ac359.mesh"]
+
+source_file="res://Vegetables/glass-wine.obj"
+dest_files=["res://.godot/imported/glass-wine.obj-9d910a566d62afb23d2cd297952ac359.mesh", "res://.godot/imported/glass-wine.obj-9d910a566d62afb23d2cd297952ac359.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

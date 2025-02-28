@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bco1ya6e4hypi"
+path="res://.godot/imported/apple.obj-533b4442dd0166e6a1f13438f373f96d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/apple.obj-533b4442dd0166e6a1f13438f373f96d.mesh"]
+
+source_file="res://Vegetables/apple.obj"
+dest_files=["res://.godot/imported/apple.obj-533b4442dd0166e6a1f13438f373f96d.mesh", "res://.godot/imported/apple.obj-533b4442dd0166e6a1f13438f373f96d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

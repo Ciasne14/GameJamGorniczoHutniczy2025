@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://lvxpt8bv174e"
+path="res://.godot/imported/tajine.obj-8f43423f457d8e188ca0f93e18b99cea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tajine.obj-8f43423f457d8e188ca0f93e18b99cea.mesh"]
+
+source_file="res://Vegetables/tajine.obj"
+dest_files=["res://.godot/imported/tajine.obj-8f43423f457d8e188ca0f93e18b99cea.mesh", "res://.godot/imported/tajine.obj-8f43423f457d8e188ca0f93e18b99cea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

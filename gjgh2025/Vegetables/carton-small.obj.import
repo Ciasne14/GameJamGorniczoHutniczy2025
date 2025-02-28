@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bceif6nhjit1p"
+path="res://.godot/imported/carton-small.obj-f0c2c489776463f1cf1fc7118b355f40.mesh"
+
+[deps]
+
+files=["res://.godot/imported/carton-small.obj-f0c2c489776463f1cf1fc7118b355f40.mesh"]
+
+source_file="res://Vegetables/carton-small.obj"
+dest_files=["res://.godot/imported/carton-small.obj-f0c2c489776463f1cf1fc7118b355f40.mesh", "res://.godot/imported/carton-small.obj-f0c2c489776463f1cf1fc7118b355f40.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

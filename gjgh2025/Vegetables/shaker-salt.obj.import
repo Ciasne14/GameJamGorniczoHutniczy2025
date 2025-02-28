@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://h85lyavyt32f"
+path="res://.godot/imported/shaker-salt.obj-74aa089c681a96861658f3cdbecdbf48.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shaker-salt.obj-74aa089c681a96861658f3cdbecdbf48.mesh"]
+
+source_file="res://Vegetables/shaker-salt.obj"
+dest_files=["res://.godot/imported/shaker-salt.obj-74aa089c681a96861658f3cdbecdbf48.mesh", "res://.godot/imported/shaker-salt.obj-74aa089c681a96861658f3cdbecdbf48.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

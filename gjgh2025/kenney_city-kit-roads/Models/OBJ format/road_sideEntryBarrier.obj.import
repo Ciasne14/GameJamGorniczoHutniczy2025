@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1fky1mvi82sc"
+path="res://.godot/imported/road_sideEntryBarrier.obj-06bee8afa32e515ad3e0db8969037472.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_sideEntryBarrier.obj-06bee8afa32e515ad3e0db8969037472.mesh"]
+
+source_file="res://kenney_city-kit-roads/Models/OBJ format/road_sideEntryBarrier.obj"
+dest_files=["res://.godot/imported/road_sideEntryBarrier.obj-06bee8afa32e515ad3e0db8969037472.mesh", "res://.godot/imported/road_sideEntryBarrier.obj-06bee8afa32e515ad3e0db8969037472.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

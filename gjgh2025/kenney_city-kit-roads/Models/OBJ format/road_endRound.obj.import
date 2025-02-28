@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwfnwoajpawse"
+path="res://.godot/imported/road_endRound.obj-422a9f9f9e332bca73a4ceb289acf2bc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_endRound.obj-422a9f9f9e332bca73a4ceb289acf2bc.mesh"]
+
+source_file="res://kenney_city-kit-roads/Models/OBJ format/road_endRound.obj"
+dest_files=["res://.godot/imported/road_endRound.obj-422a9f9f9e332bca73a4ceb289acf2bc.mesh", "res://.godot/imported/road_endRound.obj-422a9f9f9e332bca73a4ceb289acf2bc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

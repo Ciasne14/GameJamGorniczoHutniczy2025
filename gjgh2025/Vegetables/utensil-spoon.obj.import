@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bw60oyfybshmb"
+path="res://.godot/imported/utensil-spoon.obj-227c62c350d7068798ec46c6ffd60bcb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/utensil-spoon.obj-227c62c350d7068798ec46c6ffd60bcb.mesh"]
+
+source_file="res://Vegetables/utensil-spoon.obj"
+dest_files=["res://.godot/imported/utensil-spoon.obj-227c62c350d7068798ec46c6ffd60bcb.mesh", "res://.godot/imported/utensil-spoon.obj-227c62c350d7068798ec46c6ffd60bcb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

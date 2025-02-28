@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f60kwwing3v1"
+path="res://.godot/imported/plate-dinner.obj-059ecd1907d41de7cc343f292521f0bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/plate-dinner.obj-059ecd1907d41de7cc343f292521f0bd.mesh"]
+
+source_file="res://Vegetables/plate-dinner.obj"
+dest_files=["res://.godot/imported/plate-dinner.obj-059ecd1907d41de7cc343f292521f0bd.mesh", "res://.godot/imported/plate-dinner.obj-059ecd1907d41de7cc343f292521f0bd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

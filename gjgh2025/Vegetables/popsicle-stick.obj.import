@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dt77xy4sbdnxo"
+path="res://.godot/imported/popsicle-stick.obj-ded85528ad469f7da4cea117138fe88b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/popsicle-stick.obj-ded85528ad469f7da4cea117138fe88b.mesh"]
+
+source_file="res://Vegetables/popsicle-stick.obj"
+dest_files=["res://.godot/imported/popsicle-stick.obj-ded85528ad469f7da4cea117138fe88b.mesh", "res://.godot/imported/popsicle-stick.obj-ded85528ad469f7da4cea117138fe88b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

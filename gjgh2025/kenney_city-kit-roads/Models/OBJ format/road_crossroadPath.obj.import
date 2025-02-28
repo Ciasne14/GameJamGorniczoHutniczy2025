@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cpkapgwhnemy8"
+path="res://.godot/imported/road_crossroadPath.obj-2343196f63cfc6bbdd5da62f6cfe830f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_crossroadPath.obj-2343196f63cfc6bbdd5da62f6cfe830f.mesh"]
+
+source_file="res://kenney_city-kit-roads/Models/OBJ format/road_crossroadPath.obj"
+dest_files=["res://.godot/imported/road_crossroadPath.obj-2343196f63cfc6bbdd5da62f6cfe830f.mesh", "res://.godot/imported/road_crossroadPath.obj-2343196f63cfc6bbdd5da62f6cfe830f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

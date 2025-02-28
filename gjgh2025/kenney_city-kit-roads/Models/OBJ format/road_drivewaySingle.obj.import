@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dskqqaloyutam"
+path="res://.godot/imported/road_drivewaySingle.obj-d4ba72fe4655c4616a60bc5fe7f2f49c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_drivewaySingle.obj-d4ba72fe4655c4616a60bc5fe7f2f49c.mesh"]
+
+source_file="res://kenney_city-kit-roads/Models/OBJ format/road_drivewaySingle.obj"
+dest_files=["res://.godot/imported/road_drivewaySingle.obj-d4ba72fe4655c4616a60bc5fe7f2f49c.mesh", "res://.godot/imported/road_drivewaySingle.obj-d4ba72fe4655c4616a60bc5fe7f2f49c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

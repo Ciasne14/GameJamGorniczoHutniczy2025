@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bva5shpj6cqt2"]
+
+[ext_resource type="PackedScene" uid="uid://cfs2mq4qju18" path="res://Low poly Trafficlight.fbx" id="1_gt77x"]
+[ext_resource type="Script" path="res://low_poly_trafficlight.gd" id="2_20mn5"]
+
+[node name="Trafficlight" type="Node3D"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+script = ExtResource("2_20mn5")
+
+[node name="Low poly Trafficlight" parent="." instance=ExtResource("1_gt77x")]
+
+[node name="GreenLight" type="OmniLight3D" parent="Low poly Trafficlight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+light_color = Color(0, 1, 0, 1)
+light_energy = 3.0
+light_indirect_energy = 3.0
+light_volumetric_fog_energy = 3.0
+light_size = 0.362
+
+[node name="YellowLight" type="OmniLight3D" parent="Low poly Trafficlight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -2)
+light_color = Color(1, 1, 0, 1)
+light_energy = 3.0
+light_indirect_energy = 3.0
+light_volumetric_fog_energy = 3.0
+light_size = 0.362
+
+[node name="RedLight" type="OmniLight3D" parent="Low poly Trafficlight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -1.82484)
+light_color = Color(1, 0, 0, 1)
+light_energy = 3.0
+light_indirect_energy = 3.0
+light_volumetric_fog_energy = 3.0
+light_size = 0.362
+
+[node name="Timer" type="Timer" parent="."]

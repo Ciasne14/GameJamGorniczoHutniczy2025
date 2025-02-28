@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dr4rjdoj0ia22"
+path="res://.godot/imported/can-open.obj-6045c45d8427bfe535d7cf1179251ecb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/can-open.obj-6045c45d8427bfe535d7cf1179251ecb.mesh"]
+
+source_file="res://Vegetables/can-open.obj"
+dest_files=["res://.godot/imported/can-open.obj-6045c45d8427bfe535d7cf1179251ecb.mesh", "res://.godot/imported/can-open.obj-6045c45d8427bfe535d7cf1179251ecb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

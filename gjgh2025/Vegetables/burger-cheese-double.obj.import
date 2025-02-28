@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bvdpscb00s48c"
+path="res://.godot/imported/burger-cheese-double.obj-35aadbb479a69d63dddcb53e77c7d904.mesh"
+
+[deps]
+
+files=["res://.godot/imported/burger-cheese-double.obj-35aadbb479a69d63dddcb53e77c7d904.mesh"]
+
+source_file="res://Vegetables/burger-cheese-double.obj"
+dest_files=["res://.godot/imported/burger-cheese-double.obj-35aadbb479a69d63dddcb53e77c7d904.mesh", "res://.godot/imported/burger-cheese-double.obj-35aadbb479a69d63dddcb53e77c7d904.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

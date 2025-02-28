@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cgr8nbomp282a"
+path="res://.godot/imported/road_straight.obj-b03cb6219de3129e7628bdcee2c34796.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_straight.obj-b03cb6219de3129e7628bdcee2c34796.mesh"]
+
+source_file="res://kenney_city-kit-roads/Models/OBJ format/road_straight.obj"
+dest_files=["res://.godot/imported/road_straight.obj-b03cb6219de3129e7628bdcee2c34796.mesh", "res://.godot/imported/road_straight.obj-b03cb6219de3129e7628bdcee2c34796.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

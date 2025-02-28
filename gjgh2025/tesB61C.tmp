@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://s0o0pvgy1fpd"]
+
+[ext_resource type="ArrayMesh" uid="uid://dcideamurrkx8" path="res://kenney_city-kit-roads/Models/OBJ format/bridge_pillar.obj" id="1_r2n40"]
+[ext_resource type="Script" path="res://test_collider.gd" id="1_t3ulo"]
+[ext_resource type="Script" path="res://area_3d.gd" id="3_6bdxb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_baoyo"]
+size = Vector3(0.206787, 0.525391, 0.142151)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_t3ulo")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0220947, 0.237305, 0.00521851)
+shape = SubResource("BoxShape3D_baoyo")
+
+[node name="BridgePillar" type="MeshInstance3D" parent="RigidBody3D"]
+mesh = ExtResource("1_r2n40")
+
+[node name="Area3D" type="Area3D" parent="RigidBody3D"]
+script = ExtResource("3_6bdxb")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0220947, 0.237305, 0.00521851)
+shape = SubResource("BoxShape3D_baoyo")

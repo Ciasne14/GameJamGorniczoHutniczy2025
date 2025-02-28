@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ds6nnurp7bmal"
+path="res://.godot/imported/styrofoam.obj-5d742cd66bd7644168a9e440155a4f3a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/styrofoam.obj-5d742cd66bd7644168a9e440155a4f3a.mesh"]
+
+source_file="res://Vegetables/styrofoam.obj"
+dest_files=["res://.godot/imported/styrofoam.obj-5d742cd66bd7644168a9e440155a4f3a.mesh", "res://.godot/imported/styrofoam.obj-5d742cd66bd7644168a9e440155a4f3a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgcegsn1itf77"
+path="res://.godot/imported/bacon.obj-c6c10ff7f9b41f829767bd84c6891b75.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bacon.obj-c6c10ff7f9b41f829767bd84c6891b75.mesh"]
+
+source_file="res://Vegetables/bacon.obj"
+dest_files=["res://.godot/imported/bacon.obj-c6c10ff7f9b41f829767bd84c6891b75.mesh", "res://.godot/imported/bacon.obj-c6c10ff7f9b41f829767bd84c6891b75.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d3w2bqbat7ipq"
+path="res://.godot/imported/road_curve.obj-6bee54f57279ffbad89b0a9025b15881.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_curve.obj-6bee54f57279ffbad89b0a9025b15881.mesh"]
+
+source_file="res://kenney_city-kit-roads/Models/OBJ format/road_curve.obj"
+dest_files=["res://.godot/imported/road_curve.obj-6bee54f57279ffbad89b0a9025b15881.mesh", "res://.godot/imported/road_curve.obj-6bee54f57279ffbad89b0a9025b15881.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

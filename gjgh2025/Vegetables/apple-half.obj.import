@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://tfbbvpak82af"
+path="res://.godot/imported/apple-half.obj-76c52441100d068b0c866c9217335045.mesh"
+
+[deps]
+
+files=["res://.godot/imported/apple-half.obj-76c52441100d068b0c866c9217335045.mesh"]
+
+source_file="res://Vegetables/apple-half.obj"
+dest_files=["res://.godot/imported/apple-half.obj-76c52441100d068b0c866c9217335045.mesh", "res://.godot/imported/apple-half.obj-76c52441100d068b0c866c9217335045.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0tojcypkfigj"]
+
+[ext_resource type="PackedScene" uid="uid://bva5shpj6cqt2" path="res://trafficlight.tscn" id="2_2fuus"]
+[ext_resource type="PackedScene" uid="uid://s0o0pvgy1fpd" path="res://test_collider.tscn" id="2_vulub"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.202326, 0.391928, -0.897472, 0, 0.916426, 0.400205, 0.979318, -0.0809718, 0.185417, -0.903204, 0.665998, 0.237821)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.522936, -0.580945, -0.623732, 0.760259, -0.0129812, 0.649491, -0.385415, -0.81384, 0.43488, -0.0139119, 0.81885, -0.0860098)
+
+[node name="Node3D" parent="." instance=ExtResource("2_vulub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0570052, 1.15919, -0.43239)
+
+[node name="Node3D2" parent="." instance=ExtResource("2_vulub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0177875, 2.12866, -0.179655)
+
+[node name="Node3D3" parent="." instance=ExtResource("2_vulub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0395747, 2.12866, 0.121012)
+
+[node name="Node3D4" parent="." instance=ExtResource("2_vulub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0221446, 2.12866, 0.378104)
+
+[node name="Trafficlight" parent="." instance=ExtResource("2_2fuus")]
+transform = Transform3D(-0.0799695, 0, -0.0600406, 0, 0.1, 0, 0.0600406, 0, -0.0799695, -0.0841107, 0, -0.305267)
