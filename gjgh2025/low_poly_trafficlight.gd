@@ -14,17 +14,17 @@ func _on_timer_timeout() -> void:
 		green = true
 		yellow = false
 		red = false
-		$Timer.wait_time=1
+		$Timer.wait_time=2
 	elif(yellow):
 		green=false
 		yellow = false
 		red=true
-		$Timer.wait_time=1
+		$Timer.wait_time=10
 	elif(red):
 		green=false
 		yellow = true
 		red=true
-		$Timer.wait_time=10
+		$Timer.wait_time=3
 	
 	set_lights()
 		
