@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://r1h66vsbr3mi"
+path="res://.godot/imported/maki-salmon.obj-bb0e3d11b41652a9b8b56e57ad72ecf9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/maki-salmon.obj-bb0e3d11b41652a9b8b56e57ad72ecf9.mesh"]
+
+source_file="res://Models/Vegetables/maki-salmon.obj"
+dest_files=["res://.godot/imported/maki-salmon.obj-bb0e3d11b41652a9b8b56e57ad72ecf9.mesh", "res://.godot/imported/maki-salmon.obj-bb0e3d11b41652a9b8b56e57ad72ecf9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

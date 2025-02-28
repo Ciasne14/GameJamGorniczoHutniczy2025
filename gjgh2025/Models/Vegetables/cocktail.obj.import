@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bw6vtjn7edjjt"
+path="res://.godot/imported/cocktail.obj-d2b3112ec1002c5e8fd36beb90e37ec8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cocktail.obj-d2b3112ec1002c5e8fd36beb90e37ec8.mesh"]
+
+source_file="res://Models/Vegetables/cocktail.obj"
+dest_files=["res://.godot/imported/cocktail.obj-d2b3112ec1002c5e8fd36beb90e37ec8.mesh", "res://.godot/imported/cocktail.obj-d2b3112ec1002c5e8fd36beb90e37ec8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

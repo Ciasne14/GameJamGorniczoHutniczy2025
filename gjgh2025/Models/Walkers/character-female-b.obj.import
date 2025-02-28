@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d02gtxg5l66c3"
+path="res://.godot/imported/character-female-b.obj-7b4ac10e16eb7ff67a11c4f8efeb6bed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-female-b.obj-7b4ac10e16eb7ff67a11c4f8efeb6bed.mesh"]
+
+source_file="res://Models/Walkers/character-female-b.obj"
+dest_files=["res://.godot/imported/character-female-b.obj-7b4ac10e16eb7ff67a11c4f8efeb6bed.mesh", "res://.godot/imported/character-female-b.obj-7b4ac10e16eb7ff67a11c4f8efeb6bed.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

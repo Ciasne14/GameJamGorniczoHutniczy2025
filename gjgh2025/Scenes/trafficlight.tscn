@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3 uid="uid://bva5shpj6cqt2"]
+
+[ext_resource type="Script" path="res://Scripts/low_poly_trafficlight.gd" id="2_20mn5"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_wtia6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vl8r6"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ey65d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_30nr6"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v5k1p"]
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ipv5u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wql0b"]
+albedo_color = Color(0.0470588, 0, 0, 1)
+
+[node name="Trafficlight" type="Node3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("2_20mn5")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Red" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.2, 0, -1, -8.74228e-09, 0, 0, 0, 1, 0.4, 1, 0)
+mesh = SubResource("CylinderMesh_wtia6")
+skeleton = NodePath("../Lantern")
+surface_material_override/0 = SubResource("StandardMaterial3D_vl8r6")
+
+[node name="Yellow" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.2, 0, -1, -8.74228e-09, 0, 0, 0, 1, 0.43223, 0, 0)
+mesh = SubResource("CylinderMesh_ey65d")
+skeleton = NodePath("../Lantern")
+surface_material_override/0 = SubResource("StandardMaterial3D_30nr6")
+
+[node name="Green" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.2, 0, -1, -8.74228e-09, 0, 0, 0, 1, 0.4, -1, 0)
+mesh = SubResource("CylinderMesh_ey65d")
+skeleton = NodePath("../Lantern")
+surface_material_override/0 = SubResource("StandardMaterial3D_v5k1p")
+
+[node name="Lantern" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_ipv5u")
+surface_material_override/0 = SubResource("StandardMaterial3D_wql0b")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

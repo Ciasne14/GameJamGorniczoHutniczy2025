@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dn4pb0kr4xk76"
+path="res://.godot/imported/salad.obj-c707f965e1952464f405f0fb3043d2f7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/salad.obj-c707f965e1952464f405f0fb3043d2f7.mesh"]
+
+source_file="res://Models/Vegetables/salad.obj"
+dest_files=["res://.godot/imported/salad.obj-c707f965e1952464f405f0fb3043d2f7.mesh", "res://.godot/imported/salad.obj-c707f965e1952464f405f0fb3043d2f7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cvux677a4qcc4"
+path="res://.godot/imported/character-male-f.obj-39fdfdd726dfdff3f69d9819c772309d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-male-f.obj-39fdfdd726dfdff3f69d9819c772309d.mesh"]
+
+source_file="res://Models/Walkers/character-male-f.obj"
+dest_files=["res://.godot/imported/character-male-f.obj-39fdfdd726dfdff3f69d9819c772309d.mesh", "res://.godot/imported/character-male-f.obj-39fdfdd726dfdff3f69d9819c772309d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

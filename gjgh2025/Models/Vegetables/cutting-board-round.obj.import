@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dvrgsc7yca2po"
+path="res://.godot/imported/cutting-board-round.obj-8b81e09eed2bb3b16322873598b31d60.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cutting-board-round.obj-8b81e09eed2bb3b16322873598b31d60.mesh"]
+
+source_file="res://Models/Vegetables/cutting-board-round.obj"
+dest_files=["res://.godot/imported/cutting-board-round.obj-8b81e09eed2bb3b16322873598b31d60.mesh", "res://.godot/imported/cutting-board-round.obj-8b81e09eed2bb3b16322873598b31d60.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://boemghfxck2bu"
+path="res://.godot/imported/whipped-cream.obj-6edd12e5d9deabc2b2ea2c87e8412988.mesh"
+
+[deps]
+
+files=["res://.godot/imported/whipped-cream.obj-6edd12e5d9deabc2b2ea2c87e8412988.mesh"]
+
+source_file="res://Models/Vegetables/whipped-cream.obj"
+dest_files=["res://.godot/imported/whipped-cream.obj-6edd12e5d9deabc2b2ea2c87e8412988.mesh", "res://.godot/imported/whipped-cream.obj-6edd12e5d9deabc2b2ea2c87e8412988.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

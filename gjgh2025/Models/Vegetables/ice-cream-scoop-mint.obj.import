@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chcxobh34mkra"
+path="res://.godot/imported/ice-cream-scoop-mint.obj-5c6bd9119e80d1c41b1db2efb7a22d23.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ice-cream-scoop-mint.obj-5c6bd9119e80d1c41b1db2efb7a22d23.mesh"]
+
+source_file="res://Models/Vegetables/ice-cream-scoop-mint.obj"
+dest_files=["res://.godot/imported/ice-cream-scoop-mint.obj-5c6bd9119e80d1c41b1db2efb7a22d23.mesh", "res://.godot/imported/ice-cream-scoop-mint.obj-5c6bd9119e80d1c41b1db2efb7a22d23.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

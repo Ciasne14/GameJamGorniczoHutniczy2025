@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://caqlijh3u3qds"
+path="res://.godot/imported/meat-tenderizer.obj-0ee6ca95c342b0d471027a47245edf84.mesh"
+
+[deps]
+
+files=["res://.godot/imported/meat-tenderizer.obj-0ee6ca95c342b0d471027a47245edf84.mesh"]
+
+source_file="res://Models/Vegetables/meat-tenderizer.obj"
+dest_files=["res://.godot/imported/meat-tenderizer.obj-0ee6ca95c342b0d471027a47245edf84.mesh", "res://.godot/imported/meat-tenderizer.obj-0ee6ca95c342b0d471027a47245edf84.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

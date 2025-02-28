@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq30aqf8oiq8t"
+path="res://.godot/imported/popsicle-chocolate.obj-e956fd8012d60fc90e4dbdd90696bff6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/popsicle-chocolate.obj-e956fd8012d60fc90e4dbdd90696bff6.mesh"]
+
+source_file="res://Models/Vegetables/popsicle-chocolate.obj"
+dest_files=["res://.godot/imported/popsicle-chocolate.obj-e956fd8012d60fc90e4dbdd90696bff6.mesh", "res://.godot/imported/popsicle-chocolate.obj-e956fd8012d60fc90e4dbdd90696bff6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

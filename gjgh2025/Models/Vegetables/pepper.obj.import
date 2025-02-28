@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://db5xtpjl461i4"
+path="res://.godot/imported/pepper.obj-527f61ed447ace5c89bfb7656bbb0fff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pepper.obj-527f61ed447ace5c89bfb7656bbb0fff.mesh"]
+
+source_file="res://Models/Vegetables/pepper.obj"
+dest_files=["res://.godot/imported/pepper.obj-527f61ed447ace5c89bfb7656bbb0fff.mesh", "res://.godot/imported/pepper.obj-527f61ed447ace5c89bfb7656bbb0fff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

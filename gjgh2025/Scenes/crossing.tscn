@@ -1,0 +1,28 @@
+[gd_scene load_steps=7 format=3 uid="uid://si1x55vib3f"]
+
+[ext_resource type="ArrayMesh" uid="uid://hvexgjwdfrb7" path="res://Models/Roadies/Models/OBJ format/road_crossing.obj" id="1_2xk4s"]
+[ext_resource type="ArrayMesh" uid="uid://cshvjl5oabrd1" path="res://Models/Walkers/character-male-a.obj" id="2_wrijg"]
+[ext_resource type="Script" path="res://Scripts/Crossing.gd" id="3_omgip"]
+[ext_resource type="Script" path="res://Scripts/character_male_a.gd" id="3_swtul"]
+[ext_resource type="PackedScene" uid="uid://b1vwbxl0y7sdr" path="res://Scenes/wheelchair.tscn" id="4_kd2qe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eejtc"]
+size = Vector3(1, 0.707153, 0.435303)
+
+[node name="Crossing" type="Node3D"]
+
+[node name="RoadCrossing" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_2xk4s")
+
+[node name="Character-male-a" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0.025, -0.5)
+mesh = ExtResource("2_wrijg")
+script = ExtResource("3_swtul")
+
+[node name="Area3D" type="Area3D" parent="Character-male-a"]
+script = ExtResource("3_omgip")
+object_scene = ExtResource("4_kd2qe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Character-male-a/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.382912, -0.0443115)
+shape = SubResource("BoxShape3D_eejtc")

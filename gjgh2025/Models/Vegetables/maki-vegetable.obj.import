@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cmokbjpnx4e1m"
+path="res://.godot/imported/maki-vegetable.obj-677d9ef0a8199454fe1166a133b9b925.mesh"
+
+[deps]
+
+files=["res://.godot/imported/maki-vegetable.obj-677d9ef0a8199454fe1166a133b9b925.mesh"]
+
+source_file="res://Models/Vegetables/maki-vegetable.obj"
+dest_files=["res://.godot/imported/maki-vegetable.obj-677d9ef0a8199454fe1166a133b9b925.mesh", "res://.godot/imported/maki-vegetable.obj-677d9ef0a8199454fe1166a133b9b925.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

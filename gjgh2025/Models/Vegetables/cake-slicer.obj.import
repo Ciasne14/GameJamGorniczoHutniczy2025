@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bu5jt7jkx0lqp"
+path="res://.godot/imported/cake-slicer.obj-84ad69847fc7eb1d307785bddd214cbb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cake-slicer.obj-84ad69847fc7eb1d307785bddd214cbb.mesh"]
+
+source_file="res://Models/Vegetables/cake-slicer.obj"
+dest_files=["res://.godot/imported/cake-slicer.obj-84ad69847fc7eb1d307785bddd214cbb.mesh", "res://.godot/imported/cake-slicer.obj-84ad69847fc7eb1d307785bddd214cbb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

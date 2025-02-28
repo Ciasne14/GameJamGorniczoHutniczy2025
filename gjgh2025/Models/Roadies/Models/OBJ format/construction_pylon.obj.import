@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://itq4nopwqs5n"
+path="res://.godot/imported/construction_pylon.obj-0f7e55e27dd7220f73ec2537ea53924f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/construction_pylon.obj-0f7e55e27dd7220f73ec2537ea53924f.mesh"]
+
+source_file="res://Models/Roadies/Models/OBJ format/construction_pylon.obj"
+dest_files=["res://.godot/imported/construction_pylon.obj-0f7e55e27dd7220f73ec2537ea53924f.mesh", "res://.godot/imported/construction_pylon.obj-0f7e55e27dd7220f73ec2537ea53924f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

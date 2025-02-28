@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ttndh56y6rqe"
+path="res://.godot/imported/cake-birthday.obj-06d41bced03af0cccdd2e4e073debfdb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cake-birthday.obj-06d41bced03af0cccdd2e4e073debfdb.mesh"]
+
+source_file="res://Models/Vegetables/cake-birthday.obj"
+dest_files=["res://.godot/imported/cake-birthday.obj-06d41bced03af0cccdd2e4e073debfdb.mesh", "res://.godot/imported/cake-birthday.obj-06d41bced03af0cccdd2e4e073debfdb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

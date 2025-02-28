@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://k4p8wrg2t72j"
+path="res://.godot/imported/broccoli.obj-2eb0efd6d1d5b7a489e202331cb11cff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/broccoli.obj-2eb0efd6d1d5b7a489e202331cb11cff.mesh"]
+
+source_file="res://Models/Vegetables/broccoli.obj"
+dest_files=["res://.godot/imported/broccoli.obj-2eb0efd6d1d5b7a489e202331cb11cff.mesh", "res://.godot/imported/broccoli.obj-2eb0efd6d1d5b7a489e202331cb11cff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

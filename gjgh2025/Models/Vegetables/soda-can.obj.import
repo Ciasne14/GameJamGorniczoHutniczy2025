@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cewemd7iithuc"
+path="res://.godot/imported/soda-can.obj-de827f1dfbc4217571c8c5bef9007ea7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/soda-can.obj-de827f1dfbc4217571c8c5bef9007ea7.mesh"]
+
+source_file="res://Models/Vegetables/soda-can.obj"
+dest_files=["res://.godot/imported/soda-can.obj-de827f1dfbc4217571c8c5bef9007ea7.mesh", "res://.godot/imported/soda-can.obj-de827f1dfbc4217571c8c5bef9007ea7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

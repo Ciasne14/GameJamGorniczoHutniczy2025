@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dynil48uc6s6u"
+path="res://.godot/imported/mortar-pestle.obj-ea0a217e5b65c11ead3d85a8da55017c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mortar-pestle.obj-ea0a217e5b65c11ead3d85a8da55017c.mesh"]
+
+source_file="res://Models/Vegetables/mortar-pestle.obj"
+dest_files=["res://.godot/imported/mortar-pestle.obj-ea0a217e5b65c11ead3d85a8da55017c.mesh", "res://.godot/imported/mortar-pestle.obj-ea0a217e5b65c11ead3d85a8da55017c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

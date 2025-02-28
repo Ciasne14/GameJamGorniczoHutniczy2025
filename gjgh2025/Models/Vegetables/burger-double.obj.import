@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsweg7vbbuv5a"
+path="res://.godot/imported/burger-double.obj-a01be65c465624b03e34d49446f36950.mesh"
+
+[deps]
+
+files=["res://.godot/imported/burger-double.obj-a01be65c465624b03e34d49446f36950.mesh"]
+
+source_file="res://Models/Vegetables/burger-double.obj"
+dest_files=["res://.godot/imported/burger-double.obj-a01be65c465624b03e34d49446f36950.mesh", "res://.godot/imported/burger-double.obj-a01be65c465624b03e34d49446f36950.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

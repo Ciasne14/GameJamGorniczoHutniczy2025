@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://7mk1lx25bbet"
+path="res://.godot/imported/road_bendSquare.obj-64accf1dad4e6c1424accac6763d7037.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_bendSquare.obj-64accf1dad4e6c1424accac6763d7037.mesh"]
+
+source_file="res://Models/Roadies/Models/OBJ format/road_bendSquare.obj"
+dest_files=["res://.godot/imported/road_bendSquare.obj-64accf1dad4e6c1424accac6763d7037.mesh", "res://.godot/imported/road_bendSquare.obj-64accf1dad4e6c1424accac6763d7037.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

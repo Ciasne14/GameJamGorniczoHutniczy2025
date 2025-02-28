@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://deaf2i1rxaprb"
+path="res://.godot/imported/chocolate.obj-93317a8c811852366b5e957f5b07c0bd.mesh"
+
+[deps]
+
+files=["res://.godot/imported/chocolate.obj-93317a8c811852366b5e957f5b07c0bd.mesh"]
+
+source_file="res://Models/Vegetables/chocolate.obj"
+dest_files=["res://.godot/imported/chocolate.obj-93317a8c811852366b5e957f5b07c0bd.mesh", "res://.godot/imported/chocolate.obj-93317a8c811852366b5e957f5b07c0bd.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

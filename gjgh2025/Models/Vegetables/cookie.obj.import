@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6umr1llh0u7b"
+path="res://.godot/imported/cookie.obj-58b0f1e7ad68897352a40a41c6e6b08e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cookie.obj-58b0f1e7ad68897352a40a41c6e6b08e.mesh"]
+
+source_file="res://Models/Vegetables/cookie.obj"
+dest_files=["res://.godot/imported/cookie.obj-58b0f1e7ad68897352a40a41c6e6b08e.mesh", "res://.godot/imported/cookie.obj-58b0f1e7ad68897352a40a41c6e6b08e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

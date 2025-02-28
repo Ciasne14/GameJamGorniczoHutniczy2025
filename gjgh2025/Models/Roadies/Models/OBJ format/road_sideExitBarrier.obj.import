@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://8gq3ooheq5o6"
+path="res://.godot/imported/road_sideExitBarrier.obj-f63537b23adf88375ec3aff9e0802663.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_sideExitBarrier.obj-f63537b23adf88375ec3aff9e0802663.mesh"]
+
+source_file="res://Models/Roadies/Models/OBJ format/road_sideExitBarrier.obj"
+dest_files=["res://.godot/imported/road_sideExitBarrier.obj-f63537b23adf88375ec3aff9e0802663.mesh", "res://.godot/imported/road_sideExitBarrier.obj-f63537b23adf88375ec3aff9e0802663.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

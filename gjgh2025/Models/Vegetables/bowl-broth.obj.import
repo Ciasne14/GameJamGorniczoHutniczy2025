@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chxbct1yvnsfx"
+path="res://.godot/imported/bowl-broth.obj-7bbab40cb11f248038de3859f536a966.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bowl-broth.obj-7bbab40cb11f248038de3859f536a966.mesh"]
+
+source_file="res://Models/Vegetables/bowl-broth.obj"
+dest_files=["res://.godot/imported/bowl-broth.obj-7bbab40cb11f248038de3859f536a966.mesh", "res://.godot/imported/bowl-broth.obj-7bbab40cb11f248038de3859f536a966.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

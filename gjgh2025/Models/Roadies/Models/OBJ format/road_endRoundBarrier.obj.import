@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5o44xmoi0old"
+path="res://.godot/imported/road_endRoundBarrier.obj-89fa950977ecc58cbb0159923027a8d6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road_endRoundBarrier.obj-89fa950977ecc58cbb0159923027a8d6.mesh"]
+
+source_file="res://Models/Roadies/Models/OBJ format/road_endRoundBarrier.obj"
+dest_files=["res://.godot/imported/road_endRoundBarrier.obj-89fa950977ecc58cbb0159923027a8d6.mesh", "res://.godot/imported/road_endRoundBarrier.obj-89fa950977ecc58cbb0159923027a8d6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

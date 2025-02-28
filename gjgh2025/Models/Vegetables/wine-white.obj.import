@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://71g3l5of6egk"
+path="res://.godot/imported/wine-white.obj-6699aab0ec469e5c78ce6ca0c5622b07.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wine-white.obj-6699aab0ec469e5c78ce6ca0c5622b07.mesh"]
+
+source_file="res://Models/Vegetables/wine-white.obj"
+dest_files=["res://.godot/imported/wine-white.obj-6699aab0ec469e5c78ce6ca0c5622b07.mesh", "res://.godot/imported/wine-white.obj-6699aab0ec469e5c78ce6ca0c5622b07.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

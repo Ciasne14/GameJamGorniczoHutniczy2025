@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6vgrilly1ohw"
+path="res://.godot/imported/cabbage.obj-2ad9aac23ba84a9ed6a79c200d36eed8.mesh"
+
+[deps]
+
+files=["res://.godot/imported/cabbage.obj-2ad9aac23ba84a9ed6a79c200d36eed8.mesh"]
+
+source_file="res://Models/Vegetables/cabbage.obj"
+dest_files=["res://.godot/imported/cabbage.obj-2ad9aac23ba84a9ed6a79c200d36eed8.mesh", "res://.godot/imported/cabbage.obj-2ad9aac23ba84a9ed6a79c200d36eed8.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

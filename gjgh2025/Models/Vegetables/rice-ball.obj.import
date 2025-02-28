@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ckyj8ykfjh58u"
+path="res://.godot/imported/rice-ball.obj-a9b8042203c0aaac003af832fd1965ca.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rice-ball.obj-a9b8042203c0aaac003af832fd1965ca.mesh"]
+
+source_file="res://Models/Vegetables/rice-ball.obj"
+dest_files=["res://.godot/imported/rice-ball.obj-a9b8042203c0aaac003af832fd1965ca.mesh", "res://.godot/imported/rice-ball.obj-a9b8042203c0aaac003af832fd1965ca.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

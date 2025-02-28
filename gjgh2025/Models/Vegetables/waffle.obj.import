@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cm04s6fcu73o6"
+path="res://.godot/imported/waffle.obj-b5e9b6e24c9665e94406070aa06d34e7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/waffle.obj-b5e9b6e24c9665e94406070aa06d34e7.mesh"]
+
+source_file="res://Models/Vegetables/waffle.obj"
+dest_files=["res://.godot/imported/waffle.obj-b5e9b6e24c9665e94406070aa06d34e7.mesh", "res://.godot/imported/waffle.obj-b5e9b6e24c9665e94406070aa06d34e7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

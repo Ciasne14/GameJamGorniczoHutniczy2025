@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://rmd62px8gpd2"
+path="res://.godot/imported/muffin.obj-b289e6e0de50eb0fff98c98d70213d0b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/muffin.obj-b289e6e0de50eb0fff98c98d70213d0b.mesh"]
+
+source_file="res://Models/Vegetables/muffin.obj"
+dest_files=["res://.godot/imported/muffin.obj-b289e6e0de50eb0fff98c98d70213d0b.mesh", "res://.godot/imported/muffin.obj-b289e6e0de50eb0fff98c98d70213d0b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
