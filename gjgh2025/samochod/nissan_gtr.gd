@@ -14,7 +14,7 @@ const CAMERA_LATERAL_OFFSET = 2.0
 @onready var tween = get_tree().create_tween()
 
 
-@onready var MAX_SPEED_ZONE = 150.0
+@onready var MAX_SPEED_ZONE = 120.0
 var horn_index = 0
 @onready var lewymiacz = false
 @onready var prawymiacz = false
@@ -95,7 +95,7 @@ func _speed_limit() -> void:
 	  # Convert km/h to m/s (50 km/h ≈ 13.89 m/s)
 	var MAX_SPEED = MAX_SPEED_ZONE / 3.6
 	if speed > MAX_SPEED:
-		linear_velocity = linear_velocity.normalized() * MAX_SPEED
+		linear_velocity = linear_velocity.normalized() * (MAX_SPEED-1)
 		
 
 
@@ -108,7 +108,12 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 	if(area.name == "MaxSpeedReduction50"):
 		MAX_SPEED_ZONE=50.0
 	if(area.name == "MaxSpeedReduction70"):
+		var speed = linear_velocity.length()
 		MAX_SPEED_ZONE=70.0
+		#$Zwolnij.play()
+		if(speed>MAX_SPEED_ZONE/3.6):
+			brake = BRAKE_FORCE
+			linear_velocity=Vector3(0,0,0)
 	if(area.name == "Trafficlight"):
 		engine_force = 0  
 		brake = BRAKE_FORCE 

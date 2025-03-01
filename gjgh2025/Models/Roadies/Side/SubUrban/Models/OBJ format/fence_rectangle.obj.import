@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cifld21eikwu1"
+path="res://.godot/imported/fence_rectangle.obj-ae318c7001f21bc80dedbaf53c2a369a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_rectangle.obj-ae318c7001f21bc80dedbaf53c2a369a.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_rectangle.obj"
+dest_files=["res://.godot/imported/fence_rectangle.obj-ae318c7001f21bc80dedbaf53c2a369a.mesh", "res://.godot/imported/fence_rectangle.obj-ae318c7001f21bc80dedbaf53c2a369a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

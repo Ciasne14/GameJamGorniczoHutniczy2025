@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d1tjj73mcrrbd"
+path="res://.godot/imported/path_tilesLong.obj-04f115ba907b9f84a6bdf5142948738e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/path_tilesLong.obj-04f115ba907b9f84a6bdf5142948738e.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/path_tilesLong.obj"
+dest_files=["res://.godot/imported/path_tilesLong.obj-04f115ba907b9f84a6bdf5142948738e.mesh", "res://.godot/imported/path_tilesLong.obj-04f115ba907b9f84a6bdf5142948738e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cq82t41wnrx2u"
+path="res://.godot/imported/fence_small.obj-321af7b93533a73d7414993b4e8a95f6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_small.obj-321af7b93533a73d7414993b4e8a95f6.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_small.obj"
+dest_files=["res://.godot/imported/fence_small.obj-321af7b93533a73d7414993b4e8a95f6.mesh", "res://.godot/imported/fence_small.obj-321af7b93533a73d7414993b4e8a95f6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

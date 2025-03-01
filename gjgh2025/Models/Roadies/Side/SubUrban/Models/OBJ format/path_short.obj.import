@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ksbn4g2yxw77"
+path="res://.godot/imported/path_short.obj-231e3b98e74394b2e4a2c9159cd482b5.mesh"
+
+[deps]
+
+files=["res://.godot/imported/path_short.obj-231e3b98e74394b2e4a2c9159cd482b5.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/path_short.obj"
+dest_files=["res://.godot/imported/path_short.obj-231e3b98e74394b2e4a2c9159cd482b5.mesh", "res://.godot/imported/path_short.obj-231e3b98e74394b2e4a2c9159cd482b5.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

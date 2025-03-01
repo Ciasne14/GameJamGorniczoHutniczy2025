@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dqac4d2rg6rce"
+path="res://.godot/imported/house_type18.obj-042dd4bf68399b50c2fbd36baffc13fb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/house_type18.obj-042dd4bf68399b50c2fbd36baffc13fb.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type18.obj"
+dest_files=["res://.godot/imported/house_type18.obj-042dd4bf68399b50c2fbd36baffc13fb.mesh", "res://.godot/imported/house_type18.obj-042dd4bf68399b50c2fbd36baffc13fb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
