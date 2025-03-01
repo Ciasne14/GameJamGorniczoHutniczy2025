@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://b63w8trh6d8vh"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xhs1b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rf2ew"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_nyi6c"]
+material = SubResource("StandardMaterial3D_rf2ew")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lw1a2"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fvaq0"]
+material = SubResource("StandardMaterial3D_lw1a2")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w0bdc"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_vm4fe"]
+material = SubResource("StandardMaterial3D_w0bdc")
+text = "50"
+font_size = 60
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4mvv1"]
+size = Vector3(1, 2.90747, 17.2947)
+
+[node name="SpeedLimit50" type="Node3D"]
+
+[node name="Stand" type="MeshInstance3D" parent="."]
+transform = Transform3D(-8.74228e-10, 0, 0.02, 0, 1, 0, -0.02, 0, -8.74228e-10, 0.0036546, -1.3108, 0)
+mesh = SubResource("CylinderMesh_xhs1b")
+skeleton = NodePath("../Text")
+
+[node name="Out" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0.01, 0, -1, -4.37114e-10, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_nyi6c")
+
+[node name="In" type="MeshInstance3D" parent="."]
+transform = Transform3D(-3.93403e-08, 0.01, 0, -0.9, -4.37114e-10, 0, 0, 0, 0.9, 0.00784764, 0, 0)
+mesh = SubResource("CylinderMesh_fvaq0")
+
+[node name="Text" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0328575, 0, 0)
+mesh = SubResource("TextMesh_vm4fe")
+
+[node name="MaxSpeedReduction50" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MaxSpeedReduction50"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.82649, 4.54663)
+shape = SubResource("BoxShape3D_4mvv1")
+
+[node name="MaxSpeedReduction50Info" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.98686, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MaxSpeedReduction50Info"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.05812, 4.87976)
+shape = SubResource("BoxShape3D_4mvv1")

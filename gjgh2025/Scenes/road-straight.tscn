@@ -1,10 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://b71176yvvyl15"]
+[gd_scene load_steps=4 format=3 uid="uid://b71176yvvyl15"]
 
 [ext_resource type="ArrayMesh" uid="uid://cgr8nbomp282a" path="res://Models/Roadies/Models/OBJ format/road_straight.obj" id="1_6ga0r"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6yyrn"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_5fney"]
+size = Vector3(1, 0.513428, 1)
+
 [node name="Road" type="Node3D"]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 
 [node name="RoadStraight" type="MeshInstance3D" parent="."]
 mesh = ExtResource("1_6ga0r")
@@ -21,3 +25,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.28403)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStraight/LeftLine"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.797327)
 shape = SubResource("BoxShape3D_6yyrn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, -0.243286, 0)
+shape = SubResource("BoxShape3D_5fney")
