@@ -1,0 +1,443 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxv80pqu4sa5r"]
+
+[ext_resource type="ArrayMesh" uid="uid://fidum8q32sh8" path="res://Models/Roadies/Models/OBJ format/road_roundabout.obj" id="1_ktkt5"]
+[ext_resource type="ArrayMesh" uid="uid://cgr8nbomp282a" path="res://Models/Roadies/Models/OBJ format/road_straight.obj" id="2_8orc7"]
+[ext_resource type="ArrayMesh" uid="uid://bk4hbqys8or8o" path="res://Models/Roadies/Models/OBJ format/road_end.obj" id="3_u4txm"]
+[ext_resource type="ArrayMesh" uid="uid://bl172ay83fmpb" path="res://Models/Roadies/Models/OBJ format/road_crossroadLine.obj" id="4_p4b3c"]
+[ext_resource type="ArrayMesh" uid="uid://hvexgjwdfrb7" path="res://Models/Roadies/Models/OBJ format/road_crossing.obj" id="5_j78bs"]
+[ext_resource type="ArrayMesh" uid="uid://d3w2bqbat7ipq" path="res://Models/Roadies/Models/OBJ format/road_curve.obj" id="6_636no"]
+[ext_resource type="ArrayMesh" uid="uid://bwfnwoajpawse" path="res://Models/Roadies/Models/OBJ format/road_endRound.obj" id="7_brnpy"]
+[ext_resource type="ArrayMesh" uid="uid://b4dostwkld0tp" path="res://Models/Roadies/Models/OBJ format/road_curveIntersection.obj" id="8_nmcw7"]
+
+[node name="City" type="Node3D"]
+
+[node name="RoadRoundabout" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_ktkt5")
+
+[node name="RoadRoundabout2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 11)
+mesh = ExtResource("1_ktkt5")
+
+[node name="RoadStraight" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight92" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 20)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight93" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 20)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight28" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight40" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight41" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight42" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight43" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight44" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight46" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight47" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight48" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight29" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight63" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight64" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight65" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight66" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight67" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight68" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight69" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight70" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight71" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight72" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight30" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 11)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -5.95177)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5.95177)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadEnd" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+mesh = ExtResource("3_u4txm")
+
+[node name="RoadEnd2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 11)
+mesh = ExtResource("3_u4txm")
+
+[node name="RoadCrossroadLine" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("4_p4b3c")
+
+[node name="RoadStraight8" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 2)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight17" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 4)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight18" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 5)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight19" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 6)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight20" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 7)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight21" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 8)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight22" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 9)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight31" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 9)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight32" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 8)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight73" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 9.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight74" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 8.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight75" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 7.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight76" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 6.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight77" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 5.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight78" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 4.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight79" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 3.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight80" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 2.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight81" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 1.00605)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight82" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, 0.0060482)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight83" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, -0.993952)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight84" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.9739, 0, -0.993952)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight33" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 7)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight34" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 6)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight35" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 5)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight36" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 4)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight37" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 3)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight38" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 2)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight39" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 2)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight23" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 10)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight24" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 12)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight25" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 13)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight61" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 13)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight62" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 14)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight26" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 14)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight49" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 15)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight50" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 16)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight51" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 17)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight52" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 18)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight53" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 19)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight85" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 22)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight86" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 23)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight87" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 24)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight88" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 25)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight89" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 26)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight90" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 27)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight91" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 27)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight54" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 19)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight55" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 15)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight56" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 16)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight57" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0128802, 0, 0.999228, 0, 1, 0, -1.05723, 0, 0.0121735, 4.98028, 0, 17)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight58" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.96902, 0, 18.0215)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight9" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -2)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight10" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -3)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight11" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, -4)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight12" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -4)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight13" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -3)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadStraight14" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -1)
+mesh = ExtResource("2_8orc7")
+
+[node name="RoadCrossing" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, 1)
+mesh = ExtResource("5_j78bs")
+
+[node name="RoadCrossing4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1, 0, 11)
+mesh = ExtResource("5_j78bs")
+
+[node name="RoadCrossing5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 0, 11)
+mesh = ExtResource("5_j78bs")
+
+[node name="RoadCrossing2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5, 0, -2)
+mesh = ExtResource("5_j78bs")
+
+[node name="RoadCrossing3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 3)
+mesh = ExtResource("5_j78bs")
+
+[node name="RoadCurve" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50006, 0, -5.45401)
+mesh = ExtResource("6_636no")
+
+[node name="RoadCurve2" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.497591, 0, -5.44872)
+mesh = ExtResource("6_636no")
+
+[node name="RoadCrossroadLine2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11)
+mesh = ExtResource("4_p4b3c")
+
+[node name="RoadCurve3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.4725, 0, 10.503)
+mesh = ExtResource("6_636no")
+
+[node name="RoadCurve4" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4.47254, 0, 19.503)
+mesh = ExtResource("6_636no")
+
+[node name="RoadEndRound" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 18.9728, 0, -1.98972)
+mesh = ExtResource("7_brnpy")
+
+[node name="RoadCurveIntersection" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.501354, 0, 20.4999)
+mesh = ExtResource("8_nmcw7")

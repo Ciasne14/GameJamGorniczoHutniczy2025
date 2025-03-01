@@ -1,9 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://6nyklck8gdk4"]
+[gd_scene load_steps=13 format=3 uid="uid://6nyklck8gdk4"]
 
 [ext_resource type="ArrayMesh" uid="uid://baidd4vi0i61l" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type06.obj" id="1_dlhrk"]
 [ext_resource type="ArrayMesh" uid="uid://d0xxjmjib4x7x" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_large.obj" id="2_lg8fp"]
 [ext_resource type="ArrayMesh" uid="uid://cwf4vf42pvejc" path="res://Models/Walkers/character-male-b.obj" id="3_tsgd5"]
-[ext_resource type="Texture2D" uid="uid://dcubp4ylaam86" path="res://Models/Roadies/Side/SubUrban/Side/tree_small.png" id="4_061sk"]
 [ext_resource type="ArrayMesh" uid="uid://cm5hhyt5kqyfk" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/tree_small.obj" id="5_578jr"]
 [ext_resource type="ArrayMesh" uid="uid://df8cw2utwwjiu" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/tree_large.obj" id="6_f7ie6"]
 [ext_resource type="ArrayMesh" uid="uid://cjya4rqx0lpng" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_wide.obj" id="7_uuwhv"]
@@ -12,14 +11,6 @@
 [ext_resource type="ArrayMesh" uid="uid://dhh3a6n1a1yed" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type04.obj" id="10_vcyqy"]
 [ext_resource type="ArrayMesh" uid="uid://c7dt3lc5pfvuc" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type07.obj" id="11_v2k6c"]
 [ext_resource type="ArrayMesh" uid="uid://wjhmjl4u5npl" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type21.obj" id="12_6jtp8"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drjpa"]
-albedo_texture = ExtResource("4_061sk")
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_3k4uo"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_pxa4k"]
-size = Vector3(2.17285, 0.442383, 2.03491)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iu341"]
 size = Vector3(1, 1, 30.2656)
@@ -37,17 +28,6 @@ mesh = ExtResource("2_lg8fp")
 [node name="Character-male-b" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0383006, 0, 0.999266, 0, 1, 0, -0.999266, 0, -0.0383006, 0.176342, 0, 1.1096)
 mesh = ExtResource("3_tsgd5")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 13.4278, 0, -12.0084)
-material_override = SubResource("StandardMaterial3D_drjpa")
-mesh = SubResource("PlaneMesh_3k4uo")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.221436, 0)
-shape = SubResource("BoxShape3D_pxa4k")
 
 [node name="Trees" type="Node3D" parent="."]
 

@@ -14,7 +14,7 @@ const CAMERA_LATERAL_OFFSET = 2.0
 @onready var tween = get_tree().create_tween()
 
 
-@onready var MAX_SPEED_ZONE = 150.0
+@onready var MAX_SPEED_ZONE = 120.0
 var horn_index = 0
 @onready var lewymiacz = false
 @onready var prawymiacz = false
