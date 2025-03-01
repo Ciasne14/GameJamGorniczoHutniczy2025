@@ -95,7 +95,7 @@ func _speed_limit() -> void:
 	  # Convert km/h to m/s (50 km/h ≈ 13.89 m/s)
 	var MAX_SPEED = MAX_SPEED_ZONE / 3.6
 	if speed > MAX_SPEED:
-		linear_velocity = linear_velocity.normalized() * MAX_SPEED
+		linear_velocity = linear_velocity.normalized() * (MAX_SPEED-1)
 		
 
 
