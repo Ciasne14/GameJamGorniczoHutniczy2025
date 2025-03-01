@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://d0tojcypkfigj"]
+[gd_scene load_steps=7 format=3 uid="uid://d0tojcypkfigj"]
 
 [ext_resource type="PackedScene" uid="uid://2mu286i8hplm" path="res://samochod/nissan_gtr.tscn" id="2_ooq5u"]
 [ext_resource type="PackedScene" uid="uid://bva5shpj6cqt2" path="res://Scenes/trafficlight.tscn" id="2_uyyin"]
 [ext_resource type="PackedScene" uid="uid://b71176yvvyl15" path="res://Scenes/road-straight.tscn" id="3_dxcp7"]
 [ext_resource type="PackedScene" uid="uid://b63w8trh6d8vh" path="res://speed_limit_50.tscn" id="4_wphjv"]
+[ext_resource type="PackedScene" uid="uid://si1x55vib3f" path="res://Scenes/crossing.tscn" id="5_64ysb"]
+[ext_resource type="PackedScene" uid="uid://c0qndnwfxq1k4" path="res://speed_limit_70.tscn" id="6_xqrjp"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -11,8 +13,7 @@
 transform = Transform3D(0.522936, -0.580945, -0.623732, 0.760259, -0.0129812, 0.649491, -0.385415, -0.81384, 0.43488, -0.0139119, 0.81885, -0.0860098)
 
 [node name="Trafficlight" parent="." instance=ExtResource("2_uyyin")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.8718, 0, -3.42459)
-visible = false
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 164.437, 0, 7.93572)
 
 [node name="Road" parent="." instance=ExtResource("3_dxcp7")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0.545828, -1.84275, 1.09299)
@@ -35,6 +36,42 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 74.1154, -1.84275, 1.09299
 [node name="Road7" parent="." instance=ExtResource("3_dxcp7")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 88.5723, -1.84275, 1.09299)
 
+[node name="Road8" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 103.252, -1.84275, 1.09299)
+
+[node name="Road9" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 117.746, -1.84275, 1.09299)
+
+[node name="Road10" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 132.163, -1.84275, 1.09299)
+
+[node name="Road11" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 146.876, -1.84275, 1.09299)
+
+[node name="Road12" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 161.822, -1.84275, 1.09299)
+
+[node name="Road13" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 176.279, -1.84275, 1.09299)
+
+[node name="Road14" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 189.746, -1.84275, 1.09299)
+
+[node name="Road15" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 204.24, -1.84275, 1.09299)
+
+[node name="Road16" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 218.657, -1.84275, 1.09299)
+
+[node name="Road17" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 233.37, -1.84275, 1.09299)
+
+[node name="Road18" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 248.316, -1.84275, 1.09299)
+
+[node name="Road19" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 262.773, -1.84275, 1.09299)
+
 [node name="Nissan GTR" parent="." instance=ExtResource("2_ooq5u")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.88826, -0.406313, 3.28799)
 mass = 100.0
@@ -43,3 +80,9 @@ brake = 100.0
 
 [node name="SpeedLimit50" parent="." instance=ExtResource("4_wphjv")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 27.1661, 0.201993, 7.14458)
+
+[node name="Crossing" parent="." instance=ExtResource("5_64ysb")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 277.596, -1.843, 1.093)
+
+[node name="SpeedLimit70" parent="." instance=ExtResource("6_xqrjp")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 90.6236, 0, 7.34766)

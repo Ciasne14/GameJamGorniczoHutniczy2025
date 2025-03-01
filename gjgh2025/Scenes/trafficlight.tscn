@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bva5shpj6cqt2"]
+[gd_scene load_steps=12 format=3 uid="uid://bva5shpj6cqt2"]
 
 [ext_resource type="Script" path="res://Scripts/low_poly_trafficlight.gd" id="2_20mn5"]
 
@@ -26,6 +26,8 @@ size = Vector3(1, 7.50415, 8.42871)
 [sub_resource type="BoxShape3D" id="BoxShape3D_tbtyj"]
 size = Vector3(1, 4.25879, 6.0332)
 
+[sub_resource type="BoxMesh" id="BoxMesh_xdlk1"]
+
 [node name="Trafficlight" type="Node3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 script = ExtResource("2_20mn5")
@@ -34,12 +36,14 @@ script = ExtResource("2_20mn5")
 
 [node name="Red" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0.2, 0, -1, -8.74228e-09, 0, 0, 0, 1, 0.4, 1, 0)
+visible = false
 mesh = SubResource("CylinderMesh_wtia6")
 skeleton = NodePath("../Lantern")
 surface_material_override/0 = SubResource("StandardMaterial3D_vl8r6")
 
 [node name="Yellow" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0.2, 0, -1, -8.74228e-09, 0, 0, 0, 1, 0.43223, 0, 0)
+visible = false
 mesh = SubResource("CylinderMesh_ey65d")
 skeleton = NodePath("../Lantern")
 surface_material_override/0 = SubResource("StandardMaterial3D_30nr6")
@@ -56,16 +60,29 @@ mesh = SubResource("BoxMesh_ipv5u")
 surface_material_override/0 = SubResource("StandardMaterial3D_wql0b")
 
 [node name="Trafficlight" type="Area3D" parent="."]
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Trafficlight"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.4214, 0, 3.72814)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.23503, 0, 3.72814)
 shape = SubResource("BoxShape3D_v0chc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.16812, -1.28354, 3.20039)
+[node name="TrafficlightInfo" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.3123, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TrafficlightInfo"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.23503, 0, 3.72814)
+shape = SubResource("BoxShape3D_v0chc")
+
+[node name="Wall" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.16812, -1.28354, 3.20039)
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall"]
 shape = SubResource("BoxShape3D_tbtyj")
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall"]
+mesh = SubResource("BoxMesh_xdlk1")
+skeleton = NodePath("../../TrafficlightInfo")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="area_entered" from="Trafficlight" to="." method="_on_trafficlight_area_entered"]
+[connection signal="area_entered" from="TrafficlightInfo" to="." method="_on_trafficlight_info_area_entered"]
