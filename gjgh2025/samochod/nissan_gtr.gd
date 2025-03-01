@@ -11,11 +11,10 @@ const CAMERA_LATERAL_OFFSET = 2.0
 
 @onready var camera = $Camera3D
 @onready var tween = get_tree().create_tween()
-<<<<<<< HEAD
-=======
+
 @onready var MAX_SPEED_ZONE = 150.0
 # Called when the node enters the scene tree for the first time.
->>>>>>> 90fb36d240c06d28baee23c2f18d4baab5b01d60
+
 
 # Called when the node enters the scene tree for the first time.
 @onready var lewymiacz = false
@@ -75,7 +74,7 @@ func _process(delta: float) -> void:
 	var lateral_offset = steering * CAMERA_LATERAL_OFFSET  # Wartość dodatnia lub ujemna, w zależności od kierunku skrętu
 	var target_camera_position = camera.position
 	
-<<<<<<< HEAD
+
 	target_camera_position.x = lateral_offset
 	target_camera_position.z=lerp(camera.position.z, -target_camera_distance, CAMERA_LERP_SPEED)
 	camera.position = target_camera_position
@@ -88,7 +87,7 @@ func _on_left_timer_timeout() -> void:
 
 func _on_right_timer_timeout() -> void:
 	$bmw/Right.visible=!$bmw/Right.visible 
-=======
+
 
 
 func _on_car_collider_area_entered(area: Area3D) -> void:
@@ -105,4 +104,3 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 		brake = BRAKE_FORCE 
 		linear_velocity=Vector3(0,0,0)
 	print(area.name) # Replace with function body.
->>>>>>> 90fb36d240c06d28baee23c2f18d4baab5b01d60
