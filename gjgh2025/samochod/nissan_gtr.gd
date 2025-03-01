@@ -32,3 +32,7 @@ func _process(delta: float) -> void:
 	camera_position.z=lerp(camera_position.z, -target_camera_distance, CAMERA_LERP_SPEED)
 	camera.position = camera_position
 	
+
+
+func _on_car_collider_area_entered(area: Area3D) -> void:
+	print(area.name) # Replace with function body.
