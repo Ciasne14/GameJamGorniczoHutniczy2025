@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://cxv80pqu4sa5r"]
+[gd_scene load_steps=10 format=3 uid="uid://cxv80pqu4sa5r"]
 
 [ext_resource type="ArrayMesh" uid="uid://fidum8q32sh8" path="res://Models/Roadies/Models/OBJ format/road_roundabout.obj" id="1_ktkt5"]
 [ext_resource type="ArrayMesh" uid="uid://cgr8nbomp282a" path="res://Models/Roadies/Models/OBJ format/road_straight.obj" id="2_8orc7"]
@@ -8,6 +8,7 @@
 [ext_resource type="ArrayMesh" uid="uid://d3w2bqbat7ipq" path="res://Models/Roadies/Models/OBJ format/road_curve.obj" id="6_636no"]
 [ext_resource type="ArrayMesh" uid="uid://bwfnwoajpawse" path="res://Models/Roadies/Models/OBJ format/road_endRound.obj" id="7_brnpy"]
 [ext_resource type="ArrayMesh" uid="uid://b4dostwkld0tp" path="res://Models/Roadies/Models/OBJ format/road_curveIntersection.obj" id="8_nmcw7"]
+[ext_resource type="PackedScene" uid="uid://c0qndnwfxq1k4" path="res://speed_limit_70.tscn" id="9_nak1h"]
 
 [node name="City" type="Node3D"]
 
@@ -441,3 +442,6 @@ mesh = ExtResource("7_brnpy")
 [node name="RoadCurveIntersection" type="MeshInstance3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.501354, 0, 20.4999)
 mesh = ExtResource("8_nmcw7")
+
+[node name="SpeedLimit70" parent="." instance=ExtResource("9_nak1h")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.444282, 1.86708, 25.6541)

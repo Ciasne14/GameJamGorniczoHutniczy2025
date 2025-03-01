@@ -1,7 +1,8 @@
-[gd_scene load_steps=29 format=4 uid="uid://36i6yhk58k4m"]
+[gd_scene load_steps=30 format=4 uid="uid://36i6yhk58k4m"]
 
 [ext_resource type="Script" path="res://samochod/nissan_gtr.gd" id="1_y1p1y"]
 [ext_resource type="AudioStream" uid="uid://wnnhc7qyvdlh" path="res://Sounds/Clown Horn.mp3" id="2_4wh6q"]
+[ext_resource type="AudioStream" uid="uid://bpm6vgqlbdals" path="res://Sounds/ograniczenie.mp3" id="3_rqi4n"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya8fy"]
 resource_name = "tire"
@@ -520,8 +521,7 @@ use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.3
-suspension_travel = 0.15
-suspension_stiffness = 80.0
+suspension_stiffness = 40.0
 
 [node name="Circle_003" type="MeshInstance3D" parent="BackLeft"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01196, 0.378, 1.6515)
@@ -536,8 +536,7 @@ use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.3
-suspension_travel = 0.15
-suspension_stiffness = 80.0
+suspension_stiffness = 40.0
 
 [node name="Circle_002" type="MeshInstance3D" parent="BackRight"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00822, 0.392601, 1.66092)
@@ -552,7 +551,7 @@ use_as_steering = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.4
-suspension_stiffness = 120.0
+suspension_stiffness = 40.0
 
 [node name="Circle_001" type="MeshInstance3D" parent="FrontRight"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.934404, 0.393185, -1.92166)
@@ -567,7 +566,7 @@ use_as_steering = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.4
-suspension_stiffness = 120.0
+suspension_stiffness = 40.0
 
 [node name="Circle" type="MeshInstance3D" parent="FrontLeft"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.951311, 0.358278, -1.95027)
@@ -717,6 +716,9 @@ stream = ExtResource("2_4wh6q")
 [node name="HornSound5" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
 stream = ExtResource("2_4wh6q")
+
+[node name="Zwolnij" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_rqi4n")
 
 [connection signal="timeout" from="bmw/Left/LeftTimer" to="." method="_on_left_timer_timeout"]
 [connection signal="timeout" from="bmw/Right/RightTimer" to="." method="_on_right_timer_timeout"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://6nyklck8gdk4"]
+[gd_scene load_steps=16 format=3 uid="uid://6nyklck8gdk4"]
 
 [ext_resource type="ArrayMesh" uid="uid://baidd4vi0i61l" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type06.obj" id="1_dlhrk"]
 [ext_resource type="ArrayMesh" uid="uid://d0xxjmjib4x7x" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_large.obj" id="2_lg8fp"]
@@ -8,9 +8,13 @@
 [ext_resource type="ArrayMesh" uid="uid://cjya4rqx0lpng" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_wide.obj" id="7_uuwhv"]
 [ext_resource type="ArrayMesh" uid="uid://bk4hbqys8or8o" path="res://Models/Roadies/Models/OBJ format/road_end.obj" id="8_aw8f1"]
 [ext_resource type="ArrayMesh" uid="uid://cgr8nbomp282a" path="res://Models/Roadies/Models/OBJ format/road_straight.obj" id="9_1p48n"]
+[ext_resource type="Script" path="res://gwarancja.gd" id="9_j27qn"]
+[ext_resource type="AudioStream" uid="uid://t23jab16eb4f" path="res://Sounds/gwarancja.mp3" id="10_h87vu"]
 [ext_resource type="ArrayMesh" uid="uid://dhh3a6n1a1yed" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type04.obj" id="10_vcyqy"]
 [ext_resource type="ArrayMesh" uid="uid://c7dt3lc5pfvuc" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type07.obj" id="11_v2k6c"]
 [ext_resource type="ArrayMesh" uid="uid://wjhmjl4u5npl" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type21.obj" id="12_6jtp8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qx5go"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iu341"]
 size = Vector3(1, 1, 30.2656)
@@ -1429,6 +1433,17 @@ mesh = ExtResource("9_1p48n")
 transform = Transform3D(1.02606, 0, 2.81908, 0, 3, 0, -2.81908, 0, 1.02606, 19.6595, 0, -31.5279)
 mesh = ExtResource("9_1p48n")
 
+[node name="Gwarancja" type="Node3D" parent="RoadStraight3"]
+script = ExtResource("9_j27qn")
+
+[node name="Area3D" type="Area3D" parent="RoadStraight3/Gwarancja"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RoadStraight3/Gwarancja/Area3D"]
+shape = SubResource("BoxShape3D_qx5go")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="RoadStraight3/Gwarancja"]
+stream = ExtResource("10_h87vu")
+
 [node name="RoadStraight2" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.02606, 0, 2.81908, 0, 3, 0, -2.81908, 0, 1.02606, 18.6569, 0, -28.7845)
 mesh = ExtResource("9_1p48n")
@@ -1513,3 +1528,5 @@ shape = SubResource("BoxShape3D_iu341")
 transform = Transform3D(0.820411, 0.465687, -0.331754, 0, 0.58022, 0.81446, 0.571774, -0.668192, 0.476019, 10.8616, 8.72833, 3.23101)
 light_indirect_energy = 5.0
 light_angular_distance = 43.71
+
+[connection signal="area_entered" from="RoadStraight3/Gwarancja/Area3D" to="RoadStraight3/Gwarancja" method="_on_area_3d_area_entered"]

@@ -11,10 +11,9 @@ size = Vector3(1054.67, 0.247314, 1364.13)
 [node name="Node3D" type="Node3D"]
 
 [node name="Nissan GTR" parent="." instance=ExtResource("1_s1vop")]
-transform = Transform3D(-0.0262467, 0, 0.999655, 0, 1, 0, -0.999655, 0, -0.0262467, 76.4669, 6.98134, 437.593)
-mass = 30.0
-engine_force = 3000.0
-brake = 250.0
+transform = Transform3D(-0.532448, 0, -0.846463, 0, 1, 0, 0.846463, 0, -0.532448, 320.547, 6.98134, -55.3238)
+mass = 50.0
+engine_force = 300.0
 
 [node name="StartingLocation" parent="." instance=ExtResource("2_3f31y")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 85.1813, 0, 414.852)
