@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cjya4rqx0lpng"
+path="res://.godot/imported/fence_wide.obj-347cd2b5ee18c65e5f52f715f8ec1403.mesh"
+
+[deps]
+
+files=["res://.godot/imported/fence_wide.obj-347cd2b5ee18c65e5f52f715f8ec1403.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_wide.obj"
+dest_files=["res://.godot/imported/fence_wide.obj-347cd2b5ee18c65e5f52f715f8ec1403.mesh", "res://.godot/imported/fence_wide.obj-347cd2b5ee18c65e5f52f715f8ec1403.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

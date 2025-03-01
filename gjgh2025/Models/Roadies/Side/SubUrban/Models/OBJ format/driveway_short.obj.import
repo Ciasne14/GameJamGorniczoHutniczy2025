@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://chmctqa7jwol0"
+path="res://.godot/imported/driveway_short.obj-831debc02efd4dd385f74ab06ddafc08.mesh"
+
+[deps]
+
+files=["res://.godot/imported/driveway_short.obj-831debc02efd4dd385f74ab06ddafc08.mesh"]
+
+source_file="res://Models/Roadies/Side/SubUrban/Models/OBJ format/driveway_short.obj"
+dest_files=["res://.godot/imported/driveway_short.obj-831debc02efd4dd385f74ab06ddafc08.mesh", "res://.godot/imported/driveway_short.obj-831debc02efd4dd385f74ab06ddafc08.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
