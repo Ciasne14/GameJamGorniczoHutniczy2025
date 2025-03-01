@@ -117,7 +117,7 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 	if(area.name == "MaxSpeedReduction70"):
 		var speed = linear_velocity.length()
 		MAX_SPEED_ZONE=70.0
-		#$Zwolnij.play()
+		$Zwolnij.play()
 		if(speed>MAX_SPEED_ZONE/3.6):
 			brake = BRAKE_FORCE
 			linear_velocity=Vector3(0,0,0)
