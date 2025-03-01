@@ -1,6 +1,7 @@
-[gd_scene load_steps=28 format=4 uid="uid://36i6yhk58k4m"]
+[gd_scene load_steps=29 format=4 uid="uid://36i6yhk58k4m"]
 
 [ext_resource type="Script" path="res://samochod/nissan_gtr.gd" id="1_y1p1y"]
+[ext_resource type="AudioStream" uid="uid://wnnhc7qyvdlh" path="res://Sounds/Clown Horn.mp3" id="2_4wh6q"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya8fy"]
 resource_name = "tire"
@@ -661,7 +662,7 @@ light_color = Color(1, 1, 0, 1)
 light_size = 0.222
 
 [node name="LeftTimer" type="Timer" parent="bmw/Left"]
-wait_time = 0.1
+wait_time = 0.5
 
 [node name="Right" type="Node3D" parent="bmw"]
 visible = false
@@ -689,13 +690,33 @@ light_color = Color(1, 1, 0, 1)
 light_size = 0.222
 
 [node name="RightTimer" type="Timer" parent="bmw/Right"]
-wait_time = 0.1
+wait_time = 0.5
 
 [node name="CarCollider" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CarCollider"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5402e-09, 0, 0.217377)
 shape = SubResource("BoxShape3D_emvbk")
+
+[node name="HornSound" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
+stream = ExtResource("2_4wh6q")
+
+[node name="HornSound2" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
+stream = ExtResource("2_4wh6q")
+
+[node name="HornSound3" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
+stream = ExtResource("2_4wh6q")
+
+[node name="HornSound4" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
+stream = ExtResource("2_4wh6q")
+
+[node name="HornSound5" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
+stream = ExtResource("2_4wh6q")
 
 [connection signal="timeout" from="bmw/Left/LeftTimer" to="." method="_on_left_timer_timeout"]
 [connection signal="timeout" from="bmw/Right/RightTimer" to="." method="_on_right_timer_timeout"]
