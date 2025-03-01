@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0tojcypkfigj"]
+[gd_scene load_steps=5 format=3 uid="uid://d0tojcypkfigj"]
 
 [ext_resource type="PackedScene" uid="uid://2mu286i8hplm" path="res://samochod/nissan_gtr.tscn" id="2_ooq5u"]
 [ext_resource type="PackedScene" uid="uid://bva5shpj6cqt2" path="res://Scenes/trafficlight.tscn" id="2_uyyin"]
 [ext_resource type="PackedScene" uid="uid://b71176yvvyl15" path="res://Scenes/road-straight.tscn" id="3_dxcp7"]
+[ext_resource type="PackedScene" uid="uid://b63w8trh6d8vh" path="res://speed_limit_50.tscn" id="4_wphjv"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -19,5 +20,26 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0.545828, -1.84275, 1.0929
 [node name="Road2" parent="." instance=ExtResource("3_dxcp7")]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 15.5458, -1.84275, 1.09299)
 
+[node name="Road3" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 30.0397, -1.84275, 1.09299)
+
+[node name="Road4" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 44.4569, -1.84275, 1.09299)
+
+[node name="Road5" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 59.1697, -1.84275, 1.09299)
+
+[node name="Road6" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 74.1154, -1.84275, 1.09299)
+
+[node name="Road7" parent="." instance=ExtResource("3_dxcp7")]
+transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 88.5723, -1.84275, 1.09299)
+
 [node name="Nissan GTR" parent="." instance=ExtResource("2_ooq5u")]
-transform = Transform3D(-0.999974, 0, -0.0072082, 0, 1, 0, 0.0072082, 0, -0.999974, 0, 8.5458, 0)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.88826, -0.406313, 3.28799)
+mass = 100.0
+engine_force = 100.0
+brake = 100.0
+
+[node name="SpeedLimit50" parent="." instance=ExtResource("4_wphjv")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 27.1661, 0.201993, 7.14458)

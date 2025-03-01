@@ -15,6 +15,8 @@ const CAMERA_LERP_SPEED = 0.1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	var spee2d = linear_velocity.length() * 3.6  # Speed in km/h
+	print("Speed: %.1f km/h" % spee2d)
 	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER, delta * 2.5)
 	
 	if Input.is_action_pressed("ui_accept"):

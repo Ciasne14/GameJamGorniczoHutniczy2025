@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmadqlukt8hnj"
-path="res://.godot/imported/colormap.png-745a64c0d7702270513d9e0535f17a13.ctex"
+uid="uid://bdwe58reiju3h"
+path="res://.godot/imported/colormap.png-fa3d67b9b1aa0d10a3c5410d64443cc3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Models/Vegetables/Textures/colormap.png"
-dest_files=["res://.godot/imported/colormap.png-745a64c0d7702270513d9e0535f17a13.ctex"]
+source_file="res://Models/Walkers/Textures/colormap.png"
+dest_files=["res://.godot/imported/colormap.png-fa3d67b9b1aa0d10a3c5410d64443cc3.ctex"]
 
 [params]
 
