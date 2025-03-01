@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbyyr4j5xd3om"]
+
+[ext_resource type="Script" path="res://credits.gd" id="1_8gojj"]
+[ext_resource type="Texture2D" uid="uid://b0eg01c1p5r68" path="res://background.png" id="1_kd4v6"]
+
+[node name="Intro" type="CanvasLayer"]
+script = ExtResource("1_8gojj")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_kd4v6")
+
+[node name="ToMenu" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.807
+anchor_right = 0.622
+anchor_bottom = 0.931
+offset_left = -0.36499
+offset_top = -0.156067
+offset_right = 0.881836
+offset_bottom = 0.451904
+theme_override_font_sizes/font_size = 60
+text = "Szacuneczek i powrót do menu"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.218
+anchor_top = 0.168
+anchor_right = 0.844
+anchor_bottom = 0.77
+offset_left = -0.34201
+offset_top = -0.144012
+offset_right = 0.363892
+offset_bottom = -0.160034
+theme_override_colors/table_border = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 70
+text = "Martyna Gaj - fullstack
+Paweł Tokarczyk - fullstack"
+tab_size = 10
+
+[connection signal="pressed" from="TextureRect/ToMenu" to="." method="_on_to_menu_pressed"]

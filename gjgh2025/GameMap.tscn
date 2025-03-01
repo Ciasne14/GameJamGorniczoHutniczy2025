@@ -1,14 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://dg8r4c6kvt6fa"]
+[gd_scene load_steps=14 format=3 uid="uid://bdbovcff0aqtl"]
 
-[ext_resource type="PackedScene" uid="uid://36i6yhk58k4m" path="res://samochod/nissan_gtr.tscn" id="1_s1vop"]
-[ext_resource type="PackedScene" uid="uid://6nyklck8gdk4" path="res://starting_location.tscn" id="2_3f31y"]
-[ext_resource type="PackedScene" uid="uid://0cqfm4tqbbhm" path="res://highway.tscn" id="3_143sv"]
-[ext_resource type="PackedScene" uid="uid://cxv80pqu4sa5r" path="res://city.tscn" id="4_sqh2v"]
-[ext_resource type="Texture2D" uid="uid://du4co1fhei7gk" path="res://ground.jpg" id="5_gluc2"]
-[ext_resource type="Texture2D" uid="uid://dsbtvc3g3l5qt" path="res://lofoten.jpeg" id="7_qyf7y"]
+[ext_resource type="PackedScene" uid="uid://36i6yhk58k4m" path="res://samochod/nissan_gtr.tscn" id="1_wsb07"]
+[ext_resource type="PackedScene" uid="uid://6nyklck8gdk4" path="res://starting_location.tscn" id="2_hvq05"]
+[ext_resource type="PackedScene" uid="uid://0cqfm4tqbbhm" path="res://highway.tscn" id="3_rc6wf"]
+[ext_resource type="PackedScene" uid="uid://cxv80pqu4sa5r" path="res://city.tscn" id="4_hltfp"]
+[ext_resource type="Texture2D" uid="uid://du4co1fhei7gk" path="res://ground.jpg" id="5_kww8m"]
+[ext_resource type="Texture2D" uid="uid://dsbtvc3g3l5qt" path="res://lofoten.jpeg" id="6_52y3f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkrtw"]
-albedo_texture = ExtResource("5_gluc2")
+albedo_texture = ExtResource("5_kww8m")
 grow = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_cdcpx"]
@@ -19,7 +19,7 @@ grow = true
 size = Vector3(1054.67, 0.247314, 1364.13)
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_jolr0"]
-panorama = ExtResource("7_qyf7y")
+panorama = ExtResource("6_52y3f")
 
 [sub_resource type="Sky" id="Sky_34spa"]
 sky_material = SubResource("PanoramaSkyMaterial_jolr0")
@@ -32,18 +32,18 @@ sky_rotation = Vector3(-1.37008, 0, 0)
 
 [node name="Map" type="Node3D"]
 
-[node name="Nissan GTR" parent="." instance=ExtResource("1_s1vop")]
-transform = Transform3D(-0.532448, 0, -0.846463, 0, 1, 0, 0.846463, 0, -0.532448, 297.979, 6.98134, -24.9369)
+[node name="Nissan GTR" parent="." instance=ExtResource("1_wsb07")]
+transform = Transform3D(-0.222042, 0, 0.975037, 0, 1, 0, -0.975037, 0, -0.222042, 73.9791, 1.98134, 436.063)
 mass = 50.0
 engine_force = 300.0
 
-[node name="StartingLocation" parent="." instance=ExtResource("2_3f31y")]
+[node name="StartingLocation" parent="." instance=ExtResource("2_hvq05")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 85.1813, 0, 414.852)
 
-[node name="Highway" parent="." instance=ExtResource("3_143sv")]
+[node name="Highway" parent="." instance=ExtResource("3_rc6wf")]
 transform = Transform3D(-5.07614, 0, -14.115, 0, 15, 0, 14.115, 0, -5.07614, 188.379, -3.05176e-05, 243.384)
 
-[node name="City" parent="." instance=ExtResource("4_sqh2v")]
+[node name="City" parent="." instance=ExtResource("4_hltfp")]
 transform = Transform3D(5.29232, 0, 14.0354, 0, 15, 0, -14.0354, 0, 5.29232, -351.537, -0.000209808, -315.52)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
