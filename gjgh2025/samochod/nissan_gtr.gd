@@ -102,10 +102,17 @@ func _speed_limit() -> void:
 
 func _on_car_collider_area_entered(area: Area3D) -> void:
 	if(area.name == "RightLine"):
+		$Pas.play()
 		steering = MAX_STEER
 	if(area.name == "LeftLine"):
+		$Pas.play()
 		steering = -MAX_STEER
 	if(area.name == "MaxSpeedReduction50"):
+		var speed = linear_velocity.length()
+		$Zwolnij.play()
+		if(speed>MAX_SPEED_ZONE/3.6):
+			brake = BRAKE_FORCE
+			linear_velocity=Vector3(0,0,0)
 		MAX_SPEED_ZONE=50.0
 	if(area.name == "MaxSpeedReduction70"):
 		var speed = linear_velocity.length()
@@ -116,6 +123,7 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 			linear_velocity=Vector3(0,0,0)
 	if(area.name == "Trafficlight"):
 		engine_force = 0  
+		$Swiatla.play()
 		brake = BRAKE_FORCE 
 		linear_velocity=Vector3(0,0,0)
 	print(area.name) # Replace with function body.

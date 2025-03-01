@@ -33,7 +33,6 @@ func set_lights():
 	$Green.visible=green
 	$Yellow.visible=yellow
 	$Red.visible=red
-	$Wall.visible = red
 	$Trafficlight.visible = red
 func _on_trafficlight_info_area_entered(area: Area3D) -> void:
 	if(area.name=="CarCollider"):

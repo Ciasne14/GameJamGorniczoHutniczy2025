@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://6nyklck8gdk4"]
+[gd_scene load_steps=17 format=3 uid="uid://6nyklck8gdk4"]
 
 [ext_resource type="ArrayMesh" uid="uid://baidd4vi0i61l" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type06.obj" id="1_dlhrk"]
 [ext_resource type="ArrayMesh" uid="uid://d0xxjmjib4x7x" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_large.obj" id="2_lg8fp"]
 [ext_resource type="ArrayMesh" uid="uid://cwf4vf42pvejc" path="res://Models/Walkers/character-male-b.obj" id="3_tsgd5"]
+[ext_resource type="AudioStream" uid="uid://cksv8usgc05pd" path="res://Sounds/igla.mp3" id="4_jycxd"]
 [ext_resource type="ArrayMesh" uid="uid://cm5hhyt5kqyfk" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/tree_small.obj" id="5_578jr"]
 [ext_resource type="ArrayMesh" uid="uid://df8cw2utwwjiu" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/tree_large.obj" id="6_f7ie6"]
 [ext_resource type="ArrayMesh" uid="uid://cjya4rqx0lpng" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/fence_wide.obj" id="7_uuwhv"]
@@ -32,6 +33,10 @@ mesh = ExtResource("2_lg8fp")
 [node name="Character-male-b" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0383006, 0, 0.999266, 0, 1, 0, -0.999266, 0, -0.0383006, 0.176342, 0, 1.1096)
 mesh = ExtResource("3_tsgd5")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Character-male-b"]
+stream = ExtResource("4_jycxd")
+autoplay = true
 
 [node name="Trees" type="Node3D" parent="."]
 

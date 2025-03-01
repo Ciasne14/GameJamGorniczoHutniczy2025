@@ -1,11 +1,10 @@
-[gd_scene load_steps=35 format=4 uid="uid://36i6yhk58k4m"]
+[gd_scene load_steps=32 format=4 uid="uid://36i6yhk58k4m"]
 
 [ext_resource type="Script" path="res://samochod/nissan_gtr.gd" id="1_y1p1y"]
 [ext_resource type="AudioStream" uid="uid://wnnhc7qyvdlh" path="res://Sounds/Clown Horn.mp3" id="2_4wh6q"]
-[ext_resource type="Script" path="res://samochod/canvas_layer.gd" id="3_mnryh"]
-[ext_resource type="Texture2D" uid="uid://bwek8k503udt4" path="res://icons/Blue and White Minimalist Professional Business Envelope (1).png" id="4_cj80e"]
-[ext_resource type="Texture2D" uid="uid://d3q37tuntvget" path="res://icons/Blue and White Minimalist Professional Business Envelope (2).png" id="5_rnm8s"]
-[ext_resource type="Texture2D" uid="uid://pqhnni3kfwt8" path="res://icons/Blue Modern Battery Line Technology Logo.png" id="6_5qjyy"]
+[ext_resource type="AudioStream" uid="uid://bmefgrxr0p0u5" path="res://Sounds/linie.mp3" id="3_65h4x"]
+[ext_resource type="AudioStream" uid="uid://bpm6vgqlbdals" path="res://Sounds/ograniczenie.mp3" id="3_rqi4n"]
+[ext_resource type="AudioStream" uid="uid://d3fv3hgrcm0ha" path="res://Sounds/swiatla.mp3" id="4_tj4xk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya8fy"]
 resource_name = "tire"
@@ -508,10 +507,6 @@ albedo_color = Color(1, 1, 0, 1)
 [sub_resource type="BoxShape3D" id="BoxShape3D_emvbk"]
 size = Vector3(2.75171, 1, 7.02838)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_kh3nm"]
-
-[sub_resource type="Theme" id="Theme_dxhr7"]
-
 [node name="Nissan GTR" type="VehicleBody3D"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
 mass = 300.0
@@ -528,8 +523,7 @@ use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.3
-suspension_travel = 0.15
-suspension_stiffness = 80.0
+suspension_stiffness = 40.0
 
 [node name="Circle_003" type="MeshInstance3D" parent="BackLeft"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.01196, 0.378, 1.6515)
@@ -544,8 +538,7 @@ use_as_traction = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.3
-suspension_travel = 0.15
-suspension_stiffness = 80.0
+suspension_stiffness = 40.0
 
 [node name="Circle_002" type="MeshInstance3D" parent="BackRight"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00822, 0.392601, 1.66092)
@@ -560,7 +553,7 @@ use_as_steering = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.4
-suspension_stiffness = 120.0
+suspension_stiffness = 40.0
 
 [node name="Circle_001" type="MeshInstance3D" parent="FrontRight"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.934404, 0.393185, -1.92166)
@@ -575,7 +568,7 @@ use_as_steering = true
 wheel_roll_influence = 0.01
 wheel_rest_length = 0.2
 wheel_friction_slip = 1.4
-suspension_stiffness = 120.0
+suspension_stiffness = 40.0
 
 [node name="Circle" type="MeshInstance3D" parent="FrontLeft"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.951311, 0.358278, -1.95027)
@@ -726,106 +719,15 @@ stream = ExtResource("2_4wh6q")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
 stream = ExtResource("2_4wh6q")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource("3_mnryh")
+[node name="Pas" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_65h4x")
 
-[node name="Control" type="Control" parent="CanvasLayer"]
-layout_mode = 3
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -388.0
-offset_top = -186.0
-grow_horizontal = 0
-grow_vertical = 0
+[node name="Swiatla" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4_tj4xk")
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_left = -76.0
-offset_top = -2.0
-offset_right = 462.0
-offset_bottom = 186.0
-texture = ExtResource("4_cj80e")
-expand_mode = 1
-
-[node name="prawymiacz" type="TextureRect" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_left = 319.0
-offset_top = 69.0
-offset_right = 459.0
-offset_bottom = 137.0
-texture = ExtResource("5_rnm8s")
-expand_mode = 2
-
-[node name="lewymiacz" type="TextureRect" parent="CanvasLayer/Control"]
-material = SubResource("ShaderMaterial_kh3nm")
-layout_mode = 0
-offset_left = 87.0
-offset_top = 133.0
-offset_right = 242.0
-offset_bottom = 196.0
-rotation = 3.14445
-tooltip_text = "<"
-texture = ExtResource("5_rnm8s")
-expand_mode = 2
-
-[node name="paliwo" type="TextureProgressBar" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="radio" type="TextureRect" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="HSlider2" type="HSlider" parent="CanvasLayer/Control"]
-modulate = Color(0.93558, 0.669722, 0.911428, 1)
-self_modulate = Color(0.951621, 0.742065, 0.913198, 1)
-layout_mode = 0
-offset_left = 149.0
-offset_top = 130.0
-offset_right = 249.0
-offset_bottom = 146.0
-scale = Vector2(1, -3.33867)
-theme = SubResource("Theme_dxhr7")
-max_value = 120.0
-value = 120.0
-
-[node name="Battery" type="TextureRect" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_left = 146.0
-offset_top = 64.0
-offset_right = 258.0
-offset_bottom = 156.0
-texture = ExtResource("6_5qjyy")
-expand_mode = 1
-
-[node name="Timer" type="Timer" parent="CanvasLayer/Control/Battery"]
-wait_time = 0.1
-autostart = true
-
-[node name="HSlider" type="HSlider" parent="CanvasLayer/Control"]
-modulate = Color(0, 1, 1, 0.992157)
-layout_mode = 0
-offset_left = 32.0
-offset_top = 35.0
-offset_right = 359.0
-offset_bottom = 51.0
-max_value = 120.0
-value = 23.0
-
-[node name="prędkość" type="Label" parent="CanvasLayer/Control"]
-layout_mode = 0
-offset_left = 42.0
-offset_top = 10.0
-offset_right = 358.0
-offset_bottom = 83.0
-theme_override_font_sizes/font_size = 16
+[node name="Zwolnij" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_rqi4n")
 
 [connection signal="timeout" from="bmw/Left/LeftTimer" to="." method="_on_left_timer_timeout"]
 [connection signal="timeout" from="bmw/Right/RightTimer" to="." method="_on_right_timer_timeout"]
 [connection signal="area_entered" from="CarCollider" to="." method="_on_car_collider_area_entered"]
-[connection signal="timeout" from="CanvasLayer/Control/Battery/Timer" to="CanvasLayer" method="_on_timer_timeout"]
