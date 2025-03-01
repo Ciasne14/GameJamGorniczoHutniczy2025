@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://ewosxnevc3ov"]
 
-[ext_resource type="PackedScene" uid="uid://2mu286i8hplm" path="res://samochod/nissan_gtr.tscn" id="2_8ir1y"]
+[ext_resource type="PackedScene" uid="uid://36i6yhk58k4m" path="res://samochod/nissan_gtr.tscn" id="2_8ir1y"]
 [ext_resource type="Texture2D" uid="uid://cps3k8lpvsm3x" path="res://samochod/icon.svg" id="2_ge6bb"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lg7r6"]
