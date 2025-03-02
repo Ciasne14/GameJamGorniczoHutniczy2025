@@ -132,9 +132,9 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 		pieszy_potracony = true
 	if(area.name=="Finisher"):
 		if(pieszy_potracony):
-			get_tree().change_scene_to_file("res://end_game_pieszy.tscn")
+			get_tree().change_scene_to_file("res://Scenes/end_game_pieszy.tscn")
 		else:
-			get_tree().change_scene_to_file("res://end_game.tscn")
+			get_tree().change_scene_to_file("res://Scenes/end_game.tscn")
 	if(area.name =="karynka"):
 		$Karyna.play()
 	print(area.name) # Replace with function body.
