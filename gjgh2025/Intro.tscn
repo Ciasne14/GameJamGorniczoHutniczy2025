@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bloaw2s6p2a6k"]
+[gd_scene load_steps=5 format=3 uid="uid://bloaw2s6p2a6k"]
 
 [ext_resource type="Texture2D" uid="uid://b0eg01c1p5r68" path="res://background.png" id="1_exswj"]
 [ext_resource type="Script" path="res://intro.gd" id="1_fb6f5"]
 [ext_resource type="Texture2D" uid="uid://baqmrlny3i1dj" path="res://icons/notatnik.png" id="3_1qd3a"]
+[ext_resource type="FontFile" uid="uid://h3r0smosk814" path="res://icons/SourGummy_Expanded-Black.ttf" id="4_5ep6l"]
 
 [node name="Intro" type="CanvasLayer"]
 script = ExtResource("1_fb6f5")
@@ -49,13 +50,9 @@ offset_left = 98.521
 offset_top = -2.144
 offset_right = -65.5709
 offset_bottom = 115.776
-theme_override_colors/table_border = Color(0, 0, 0, 1)
-theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
-theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 64
+theme_override_colors/default_color = Color(0.0117647, 0.180392, 0.286275, 1)
+theme_override_fonts/normal_font = ExtResource("4_5ep6l")
+theme_override_font_sizes/normal_font_size = 51
 text = "Zakupiłeś nowiutkiego, używanego Nissana GTR, elektryka. Wróć do siebie zanim skończy się bateria.
 
 WASD - sterowanie"

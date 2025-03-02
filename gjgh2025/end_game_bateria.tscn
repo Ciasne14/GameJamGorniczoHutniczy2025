@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://das7rqukc1vut"]
+[gd_scene load_steps=5 format=3 uid="uid://b6cc61jhgyapu"]
 
 [ext_resource type="Script" path="res://end_game_Screen.gd" id="1_v81b1"]
 [ext_resource type="Texture2D" uid="uid://b0eg01c1p5r68" path="res://background.png" id="2_4eux1"]
+[ext_resource type="Texture2D" uid="uid://d1t51g3nft8d7" path="res://icons/notatnik2.png" id="3_jew1h"]
+[ext_resource type="FontFile" uid="uid://h3r0smosk814" path="res://icons/SourGummy_Expanded-Black.ttf" id="4_t5u5d"]
 
 [node name="EndGamePieszy" type="CanvasLayer"]
 script = ExtResource("1_v81b1")
@@ -14,47 +16,55 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_4eux1")
 
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 278.0
+offset_top = -50.0
+offset_right = 1495.0
+offset_bottom = 855.0
+texture = ExtResource("3_jew1h")
+
 [node name="Restart" type="Button" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.652
-anchor_top = 0.1
-anchor_right = 0.94
-anchor_bottom = 0.225
-offset_left = -0.187988
-offset_top = 0.199997
-offset_right = -0.860107
-offset_bottom = -0.300003
+anchor_left = 0.31
+anchor_top = 0.452
+anchor_right = 0.447
+anchor_bottom = 0.534
+offset_left = 0.609985
+offset_top = 0.18399
+offset_right = -0.29303
+offset_bottom = 0.327942
 theme_override_font_sizes/font_size = 60
 text = "Restart"
 
 [node name="Menu" type="Button" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.652
-anchor_top = 0.339
-anchor_right = 0.94
-anchor_bottom = 0.464
-offset_left = 0.312012
-offset_top = 0.38797
-offset_right = -0.360107
-offset_bottom = -0.112
+anchor_left = 0.5
+anchor_top = 0.454
+anchor_right = 0.638
+anchor_bottom = 0.536
+offset_left = 3.0
+offset_top = -0.0320435
+offset_right = 0.177979
+offset_bottom = 0.112
 theme_override_font_sizes/font_size = 60
 text = "Menu"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.195
-anchor_top = 0.127
-anchor_right = 0.62
-anchor_bottom = 0.552
-offset_left = -0.705017
-offset_top = 0.283997
-offset_right = 0.719971
-offset_bottom = 0.383972
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+anchor_left = 0.301
+anchor_top = 0.251
+anchor_right = 0.695
+anchor_bottom = 0.398
+offset_left = 0.88092
+offset_top = -0.108032
+offset_right = 0.794922
+offset_bottom = 0.0159607
+theme_override_colors/default_color = Color(0.0107187, 0.181096, 0.287613, 1)
+theme_override_fonts/normal_font = ExtResource("4_t5u5d")
 theme_override_font_sizes/normal_font_size = 40
 text = "Padła Ci bateria, powodzenia następnym razem"
 
