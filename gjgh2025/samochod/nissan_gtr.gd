@@ -16,6 +16,7 @@ const CAMERA_LATERAL_OFFSET = 2.0
 
 @onready var MAX_SPEED_ZONE = 120.0
 var horn_index = 0
+var trafficIndicatorFree = true
 @onready var lewymiacz = false
 @onready var prawymiacz = false
 
@@ -31,7 +32,6 @@ func _process(delta: float) -> void:
 	
 func _update_speed_display() -> void:
 	var speed_kmh = linear_velocity.length() * 3.6  # Speed in km/h
-	print("Speed: %.1f km/h" % speed_kmh)
 	
 func _handle_steering(delta: float) -> void:
 	steering = move_toward(steering, Input.get_axis("ui_right", "ui_left") * MAX_STEER, delta * 2.5)
@@ -54,11 +54,15 @@ func _toggle_indicator(side: String) -> void:
 		prawymiacz = false
 		_set_indicator_visibility($bmw/Left, lewymiacz, $bmw/Left/LeftTimer)
 		_set_indicator_visibility($bmw/Right, false,$bmw/Right/RightTimer )
+		if(lewymiacz == true):
+			$MiaczIndicator.start()
 	elif side == "right":
 		prawymiacz = !prawymiacz
 		lewymiacz = false
 		_set_indicator_visibility($bmw/Right, prawymiacz, $bmw/Right/RightTimer)
 		_set_indicator_visibility($bmw/Left, false, $bmw/Left/LeftTimer )
+		if(prawymiacz == true):
+			$MiaczIndicator.start()
 
 func _set_indicator_visibility(light: Node, is_active: bool, timer: Timer) -> void:
 	light.visible = is_active
@@ -96,17 +100,13 @@ func _speed_limit() -> void:
 	var MAX_SPEED = MAX_SPEED_ZONE / 3.6
 	if speed > MAX_SPEED:
 		linear_velocity = linear_velocity.normalized() * (MAX_SPEED-1)
-		
-
-
 
 func _on_car_collider_area_entered(area: Area3D) -> void:
-	if(area.name == "RightLine"):
+	if(area.name.contains("Line")):
 		$Pas.play()
-		steering = MAX_STEER
-	if(area.name == "LeftLine"):
-		$Pas.play()
-		steering = -MAX_STEER
+	#if(area.name == "LeftLine"):
+	#	$Pas.play()
+	#	steering = -MAX_STEER
 	if(area.name == "MaxSpeedReduction50"):
 		var speed = linear_velocity.length()
 		$Zwolnij.play()
@@ -121,9 +121,20 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 		if(speed>MAX_SPEED_ZONE/3.6):
 			brake = BRAKE_FORCE
 			linear_velocity=Vector3(0,0,0)
-	if(area.name == "Trafficlight"):
+	if(area.name == "Trafficlight" && trafficIndicatorFree):
 		engine_force = 0  
 		$Swiatla.play()
 		brake = BRAKE_FORCE 
 		linear_velocity=Vector3(0,0,0)
+		trafficIndicatorFree=false
+	if(area.name=="Pieszy"):
+		$Warzywo.play()
+	if(area.name=="Finisher"):
+		get_tree().change_scene_to_file("res://end_game.tscn")
 	print(area.name) # Replace with function body.
+
+func _on_light_indicator_timeout() -> void:
+	trafficIndicatorFree= true
+
+func _on_miacz_indicator_timeout() -> void:
+	$Miacze.play()

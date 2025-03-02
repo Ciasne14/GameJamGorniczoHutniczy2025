@@ -1,13 +1,13 @@
 extends Area3D
 
 @export var object_scene: PackedScene  # Scene to instantiate
-@onready var existing_object = $ExistingObject  # Reference to the existing object
 
 func _ready():
 	connect("area_entered", Callable(self, "_on_area_entered"))
 
 func _on_area_entered(area):
 	if(area.name=="CarCollider"):
+		$"../../AudioStreamPlayer3D".play()
 		spawn_at_existing_object()
 		$"..".queue_free()
 	

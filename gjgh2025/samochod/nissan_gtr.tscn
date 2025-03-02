@@ -1,10 +1,12 @@
-[gd_scene load_steps=32 format=4 uid="uid://36i6yhk58k4m"]
+[gd_scene load_steps=34 format=4 uid="uid://36i6yhk58k4m"]
 
 [ext_resource type="Script" path="res://samochod/nissan_gtr.gd" id="1_y1p1y"]
 [ext_resource type="AudioStream" uid="uid://wnnhc7qyvdlh" path="res://Sounds/Clown Horn.mp3" id="2_4wh6q"]
+[ext_resource type="AudioStream" uid="uid://srucvts88ah0" path="res://Sounds/warzywa.mp3" id="2_bby5j"]
 [ext_resource type="AudioStream" uid="uid://bmefgrxr0p0u5" path="res://Sounds/linie.mp3" id="3_65h4x"]
 [ext_resource type="AudioStream" uid="uid://bpm6vgqlbdals" path="res://Sounds/ograniczenie.mp3" id="3_rqi4n"]
 [ext_resource type="AudioStream" uid="uid://d3fv3hgrcm0ha" path="res://Sounds/swiatla.mp3" id="4_tj4xk"]
+[ext_resource type="AudioStream" uid="uid://8wv0bmccajhn" path="res://Sounds/mrygac.mp3" id="6_e1syi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya8fy"]
 resource_name = "tire"
@@ -699,6 +701,9 @@ wait_time = 0.5
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5402e-09, 0, 0.217377)
 shape = SubResource("BoxShape3D_emvbk")
 
+[node name="Warzywo" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("2_bby5j")
+
 [node name="HornSound" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0550234, 0, 0.137928)
 stream = ExtResource("2_4wh6q")
@@ -728,6 +733,19 @@ stream = ExtResource("4_tj4xk")
 [node name="Zwolnij" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("3_rqi4n")
 
+[node name="Miacze" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_e1syi")
+
+[node name="LightIndicator" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="MiaczIndicator" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
 [connection signal="timeout" from="bmw/Left/LeftTimer" to="." method="_on_left_timer_timeout"]
 [connection signal="timeout" from="bmw/Right/RightTimer" to="." method="_on_right_timer_timeout"]
 [connection signal="area_entered" from="CarCollider" to="." method="_on_car_collider_area_entered"]
+[connection signal="timeout" from="LightIndicator" to="." method="_on_light_indicator_timeout"]
+[connection signal="timeout" from="MiaczIndicator" to="." method="_on_miacz_indicator_timeout"]

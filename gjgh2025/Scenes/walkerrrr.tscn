@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://bu3yfk2g0q124"]
+[gd_scene load_steps=9 format=3 uid="uid://bu3yfk2g0q124"]
 
 [ext_resource type="ArrayMesh" uid="uid://hvexgjwdfrb7" path="res://Models/Roadies/Models/OBJ format/road_crossing.obj" id="1_rbfi6"]
 [ext_resource type="ArrayMesh" uid="uid://cshvjl5oabrd1" path="res://Models/Walkers/character-male-a.obj" id="2_oifyy"]
 [ext_resource type="Script" path="res://Scripts/character_male_a.gd" id="3_p4f70"]
 [ext_resource type="Script" path="res://Scripts/Crossing.gd" id="4_7k3ra"]
 [ext_resource type="PackedScene" uid="uid://b1vwbxl0y7sdr" path="res://Scenes/wheelchair.tscn" id="5_pabvu"]
+[ext_resource type="AudioStream" uid="uid://bp1cr7fud1aun" path="res://death.mp3" id="6_wkjfu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eejtc"]
 size = Vector3(1, 0.707153, 0.435303)
@@ -31,8 +32,12 @@ object_scene = ExtResource("5_pabvu")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.382912, -0.0443115)
 shape = SubResource("BoxShape3D_eejtc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="Pieszy" type="StaticBody3D" parent="."]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pieszy"]
 transform = Transform3D(0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, -0.243286, 0)
 shape = SubResource("BoxShape3D_rg3tk")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6_wkjfu")
+volume_db = 2.285

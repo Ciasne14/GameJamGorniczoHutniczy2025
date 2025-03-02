@@ -33,7 +33,7 @@ sky_rotation = Vector3(-1.37008, 0, 0)
 [node name="Map" type="Node3D"]
 
 [node name="Nissan GTR" parent="." instance=ExtResource("1_t1kxv")]
-transform = Transform3D(-0.432196, 0, -0.90178, 0, 1, 0, 0.90178, 0, -0.432196, -50.9827, 1.98134, -203.282)
+transform = Transform3D(-0.432196, 0, -0.90178, 0, 1, 0, 0.90178, 0, -0.432196, 54.878, 1.98134, -154.032)
 mass = 50.0
 engine_force = 300.0
 
