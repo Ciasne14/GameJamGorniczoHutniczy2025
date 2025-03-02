@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bloaw2s6p2a6k"]
+[gd_scene load_steps=4 format=3 uid="uid://bloaw2s6p2a6k"]
 
 [ext_resource type="Texture2D" uid="uid://b0eg01c1p5r68" path="res://background.png" id="1_exswj"]
 [ext_resource type="Script" path="res://intro.gd" id="1_fb6f5"]
+[ext_resource type="Texture2D" uid="uid://baqmrlny3i1dj" path="res://icons/notatnik.png" id="3_1qd3a"]
 
 [node name="Intro" type="CanvasLayer"]
 script = ExtResource("1_fb6f5")
@@ -13,6 +14,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_exswj")
+
+[node name="Notatka" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 178.5
+offset_top = -85.0
+offset_right = 1655.5
+offset_bottom = 1199.0
+texture = ExtResource("3_1qd3a")
+expand_mode = 1
 
 [node name="GoOn" type="Button" parent="TextureRect"]
 layout_mode = 1
@@ -35,20 +45,20 @@ anchor_left = 0.241
 anchor_top = 0.168
 anchor_right = 0.709
 anchor_bottom = 0.678
-offset_left = 0.0209656
-offset_top = -0.144012
-offset_right = -0.0710449
-offset_bottom = -0.22406
+offset_left = 98.521
+offset_top = -2.144
+offset_right = -65.5709
+offset_bottom = 115.776
 theme_override_colors/table_border = Color(0, 0, 0, 1)
 theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 70
+theme_override_font_sizes/normal_font_size = 64
 text = "Zakupiłeś nowiutkiego, używanego Nissana GTR, elektryka. Wróć do siebie zanim skończy się bateria.
 
 WASD - sterowanie"
-tab_size = 10
+tab_size = 9
 
 [connection signal="pressed" from="TextureRect/GoOn" to="." method="_on_go_on_pressed"]
