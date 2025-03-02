@@ -152,3 +152,7 @@ func _on_light_indicator_timeout() -> void:
 
 func _on_miacz_indicator_timeout() -> void:
 	$Miacze.play()
+
+
+func _on_menu_pressed() -> void:
+	pass # Replace with function body.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=4 uid="uid://36i6yhk58k4m"]
+[gd_scene load_steps=44 format=4 uid="uid://36i6yhk58k4m"]
 
 [ext_resource type="Script" path="res://Models/samochod/nissan_gtr.gd" id="1_y1p1y"]
 [ext_resource type="AudioStream" uid="uid://wnnhc7qyvdlh" path="res://Sounds/Clown Horn.mp3" id="2_4wh6q"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://d3q37tuntvget" path="res://Images/icons/Blue and White Minimalist Professional Business Envelope (2).png" id="8_qwlvd"]
 [ext_resource type="Script" path="res://Models/samochod/canvas_layer.gd" id="8_s1cqp"]
 [ext_resource type="Texture2D" uid="uid://pqhnni3kfwt8" path="res://Images/icons/Blue Modern Battery Line Technology Logo.png" id="10_q5li2"]
+[ext_resource type="Script" path="res://Models/samochod/pause_menu.gd" id="13_hivrk"]
+[ext_resource type="Texture2D" uid="uid://baqmrlny3i1dj" path="res://Images/icons/notatnik.png" id="14_tnjcw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya8fy"]
 resource_name = "tire"
@@ -853,9 +855,65 @@ skeleton = NodePath("../MeshInstance3D")
 transform = Transform3D(1, -3.50388e-09, 1.19963e-10, 1.4005e-08, 0.236998, -0.0166799, 2.30433e-09, 0.0801594, 0.0493154, -0.00521159, 0.203259, -2.86267)
 mesh = SubResource("BoxMesh_q8dne")
 
+[node name="PauseMenu" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("13_hivrk")
+
+[node name="TextureRect" type="TextureRect" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_tnjcw")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="PauseMenu/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.272
+anchor_top = 0.192
+anchor_right = 0.712
+anchor_bottom = 0.322
+offset_bottom = -1.52588e-05
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 46
+text = "PAUZA"
+
+[node name="Menu" type="Button" parent="PauseMenu/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.362
+anchor_top = 0.43
+anchor_right = 0.664
+anchor_bottom = 0.526
+offset_left = -1.52588e-05
+offset_right = -3.05176e-05
+text = "Menu"
+
+[node name="Powrót" type="Button" parent="PauseMenu/TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.362
+anchor_top = 0.612
+anchor_right = 0.664
+anchor_bottom = 0.708
+offset_left = -1.52588e-05
+offset_top = -3.05176e-05
+offset_right = -3.05176e-05
+text = "Powrót"
+
 [connection signal="timeout" from="bmw/Left/LeftTimer" to="." method="_on_left_timer_timeout"]
 [connection signal="timeout" from="bmw/Right/RightTimer" to="." method="_on_right_timer_timeout"]
 [connection signal="area_entered" from="CarCollider" to="." method="_on_car_collider_area_entered"]
 [connection signal="timeout" from="LightIndicator" to="." method="_on_light_indicator_timeout"]
 [connection signal="timeout" from="MiaczIndicator" to="." method="_on_miacz_indicator_timeout"]
 [connection signal="timeout" from="CanvasLayer/Control/HSlider2/Timer" to="CanvasLayer" method="_on_timer_timeout"]
+[connection signal="pressed" from="PauseMenu/TextureRect/Menu" to="PauseMenu" method="_on_menu_pressed"]
+[connection signal="pressed" from="PauseMenu/TextureRect/Powrót" to="PauseMenu" method="_on_powrót_pressed"]
