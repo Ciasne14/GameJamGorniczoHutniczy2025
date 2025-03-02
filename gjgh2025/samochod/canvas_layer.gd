@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var speed_label = $"Control/prędkość"
+@onready var speed_label = $"Control/predkosc"
 @onready var left_indicator = $Control/lewymiacz
 @onready var right_indicator = $Control/prawymiacz
 

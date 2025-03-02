@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=4 uid="uid://36i6yhk58k4m"]
+[gd_scene load_steps=38 format=4 uid="uid://36i6yhk58k4m"]
 
 [ext_resource type="Script" path="res://samochod/nissan_gtr.gd" id="1_y1p1y"]
 [ext_resource type="AudioStream" uid="uid://wnnhc7qyvdlh" path="res://Sounds/Clown Horn.mp3" id="2_4wh6q"]
@@ -7,6 +7,10 @@
 [ext_resource type="AudioStream" uid="uid://bpm6vgqlbdals" path="res://Sounds/ograniczenie.mp3" id="3_rqi4n"]
 [ext_resource type="AudioStream" uid="uid://d3fv3hgrcm0ha" path="res://Sounds/swiatla.mp3" id="4_tj4xk"]
 [ext_resource type="AudioStream" uid="uid://8wv0bmccajhn" path="res://Sounds/mrygac.mp3" id="6_e1syi"]
+[ext_resource type="Texture2D" uid="uid://bwek8k503udt4" path="res://icons/Blue and White Minimalist Professional Business Envelope (1).png" id="8_8vctv"]
+[ext_resource type="Texture2D" uid="uid://d3q37tuntvget" path="res://icons/Blue and White Minimalist Professional Business Envelope (2).png" id="8_qwlvd"]
+[ext_resource type="Script" path="res://samochod/canvas_layer.gd" id="8_s1cqp"]
+[ext_resource type="Texture2D" uid="uid://pqhnni3kfwt8" path="res://icons/Blue Modern Battery Line Technology Logo.png" id="10_q5li2"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ya8fy"]
 resource_name = "tire"
@@ -744,8 +748,86 @@ one_shot = true
 wait_time = 3.0
 one_shot = true
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("8_s1cqp")
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -344.0
+offset_top = -210.0
+offset_right = -304.0
+offset_bottom = -170.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="tlo" type="TextureRect" parent="CanvasLayer/Control"]
+offset_left = -64.0
+offset_top = -1.0
+offset_right = 400.0
+offset_bottom = 204.0
+texture = ExtResource("8_8vctv")
+expand_mode = 1
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 51.0
+offset_right = 304.0
+offset_bottom = 67.0
+max_value = 120.0
+
+[node name="predkosc" type="Label" parent="CanvasLayer/Control"]
+offset_left = 24.0
+offset_top = 19.0
+offset_right = 324.0
+offset_bottom = 88.0
+
+[node name="lewymiacz" type="TextureRect" parent="CanvasLayer/Control"]
+offset_left = 65.0
+offset_top = 148.0
+offset_right = 211.0
+offset_bottom = 215.0
+rotation = -3.13994
+texture = ExtResource("8_qwlvd")
+expand_mode = 1
+
+[node name="prawymiacz" type="TextureRect" parent="CanvasLayer/Control"]
+offset_left = 275.0
+offset_top = 81.0
+offset_right = 421.0
+offset_bottom = 148.0
+rotation = -0.00414276
+texture = ExtResource("8_qwlvd")
+expand_mode = 1
+
+[node name="HSlider2" type="HSlider" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 81.0
+offset_right = 230.0
+offset_bottom = 150.0
+max_value = 180.0
+value = 180.0
+
+[node name="Timer" type="Timer" parent="CanvasLayer/Control/HSlider2"]
+autostart = true
+
+[node name="bateria" type="TextureRect" parent="CanvasLayer/Control"]
+offset_left = 95.0
+offset_top = 61.0
+offset_right = 247.0
+offset_bottom = 186.0
+texture = ExtResource("10_q5li2")
+expand_mode = 1
+
 [connection signal="timeout" from="bmw/Left/LeftTimer" to="." method="_on_left_timer_timeout"]
 [connection signal="timeout" from="bmw/Right/RightTimer" to="." method="_on_right_timer_timeout"]
 [connection signal="area_entered" from="CarCollider" to="." method="_on_car_collider_area_entered"]
 [connection signal="timeout" from="LightIndicator" to="." method="_on_light_indicator_timeout"]
 [connection signal="timeout" from="MiaczIndicator" to="." method="_on_miacz_indicator_timeout"]
+[connection signal="timeout" from="CanvasLayer/Control/HSlider2/Timer" to="CanvasLayer" method="_on_timer_timeout"]
