@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://pt6j5mp4bpvq"
+path="res://.godot/imported/vehicle-vintage-racer.obj-245330e4a5c7c8dbfa1bd919c7c88bda.mesh"
+
+[deps]
+
+files=["res://.godot/imported/vehicle-vintage-racer.obj-245330e4a5c7c8dbfa1bd919c7c88bda.mesh"]
+
+source_file="res://CarsKit/OBJ format/vehicle-vintage-racer.obj"
+dest_files=["res://.godot/imported/vehicle-vintage-racer.obj-245330e4a5c7c8dbfa1bd919c7c88bda.mesh", "res://.godot/imported/vehicle-vintage-racer.obj-245330e4a5c7c8dbfa1bd919c7c88bda.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cx1i1xac17aos"
+path="res://.godot/imported/wheel-small.obj-44287a4a9883decd8ccb07510d5044c0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wheel-small.obj-44287a4a9883decd8ccb07510d5044c0.mesh"]
+
+source_file="res://CarsKit/OBJ format/wheel-small.obj"
+dest_files=["res://.godot/imported/wheel-small.obj-44287a4a9883decd8ccb07510d5044c0.mesh", "res://.godot/imported/wheel-small.obj-44287a4a9883decd8ccb07510d5044c0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

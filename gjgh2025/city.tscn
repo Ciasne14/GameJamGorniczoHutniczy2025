@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=3 uid="uid://cxv80pqu4sa5r"]
+[gd_scene load_steps=54 format=3 uid="uid://cxv80pqu4sa5r"]
 
 [ext_resource type="ArrayMesh" uid="uid://fidum8q32sh8" path="res://Models/Roadies/Models/OBJ format/road_roundabout.obj" id="1_ktkt5"]
 [ext_resource type="ArrayMesh" uid="uid://cgr8nbomp282a" path="res://Models/Roadies/Models/OBJ format/road_straight.obj" id="2_8orc7"]
@@ -8,8 +8,11 @@
 [ext_resource type="ArrayMesh" uid="uid://d3w2bqbat7ipq" path="res://Models/Roadies/Models/OBJ format/road_curve.obj" id="6_636no"]
 [ext_resource type="ArrayMesh" uid="uid://bwfnwoajpawse" path="res://Models/Roadies/Models/OBJ format/road_endRound.obj" id="7_brnpy"]
 [ext_resource type="ArrayMesh" uid="uid://b4dostwkld0tp" path="res://Models/Roadies/Models/OBJ format/road_curveIntersection.obj" id="8_nmcw7"]
+[ext_resource type="ArrayMesh" uid="uid://div6yeerfi8j7" path="res://CarsKit/OBJ format/vehicle-drag-racer.obj" id="9_bqlk2"]
 [ext_resource type="PackedScene" uid="uid://c0qndnwfxq1k4" path="res://speed_limit_70.tscn" id="9_nak1h"]
+[ext_resource type="ArrayMesh" uid="uid://d4dbgs57yos7p" path="res://CarsKit/OBJ format/vehicle-truck.obj" id="10_7qcu2"]
 [ext_resource type="PackedScene" uid="uid://bva5shpj6cqt2" path="res://Scenes/trafficlight.tscn" id="10_tsibv"]
+[ext_resource type="ArrayMesh" uid="uid://duh2ei3bweha0" path="res://CarsKit/OBJ format/vehicle-suv.obj" id="11_4sq6c"]
 [ext_resource type="PackedScene" uid="uid://bu3yfk2g0q124" path="res://Scenes/walkerrrr.tscn" id="11_5v21k"]
 [ext_resource type="PackedScene" uid="uid://b63w8trh6d8vh" path="res://speed_limit_50.tscn" id="12_xs8am"]
 [ext_resource type="ArrayMesh" uid="uid://dmg2sjv7dba8u" path="res://Models/Roadies/Side/SubUrban/Models/OBJ format/house_type01.obj" id="13_lcy7u"]
@@ -623,10 +626,31 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 0,
 mesh = ExtResource("5_j78bs")
 skeleton = NodePath("../..")
 
-[node name="Walkers" type="Node3D" parent="."]
+[node name="Vehicle-drag-racer" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(0.174597, 0, -0.468525, 0, 0.5, 0, 0.468525, 0, 0.174597, 1.095, 0, 20.8932)
+mesh = ExtResource("9_bqlk2")
 
-[node name="Crossing" parent="Walkers" instance=ExtResource("11_5v21k")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00732422, 0, 16.7827)
+[node name="Vehicle-truck" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(0.460696, 0, 0.887558, 0, 1, 0, -0.887558, 0, 0.460696, 2.16292, 0.500122, 21.1315)
+mesh = ExtResource("10_7qcu2")
+
+[node name="Vehicle-suv" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.49615, 0.500122, 18.9931)
+mesh = ExtResource("11_4sq6c")
+
+[node name="Vehicle-suv2" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.57165, 0.5, 12.0999)
+mesh = ExtResource("11_4sq6c")
+
+[node name="Vehicle-truck2" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.2113, 0, 6.96045)
+mesh = ExtResource("10_7qcu2")
+
+[node name="Vehicle-suv3" type="MeshInstance3D" parent="Roads"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.294006, 0, 5.29636)
+mesh = ExtResource("11_4sq6c")
+
+[node name="Walkers" type="Node3D" parent="."]
 
 [node name="Crossing2" parent="Walkers" instance=ExtResource("11_5v21k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.399536, 0, 16.7827)
