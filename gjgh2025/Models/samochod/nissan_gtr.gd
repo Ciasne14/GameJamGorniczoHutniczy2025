@@ -9,6 +9,7 @@ const SPEED_THRESHOLD = 30.0
 const CAMERA_LERP_SPEED = 0.1
 const CAMERA_LATERAL_OFFSET = 2.0
 
+
 @onready var camera = $Camera3D
 @onready var horn_sounds = [$HornSound, $HornSound2, $HornSound3, $HornSound4, $HornSound5]
 @onready var tween = get_tree().create_tween()
@@ -93,8 +94,15 @@ func _handle_camera() -> void:
 	var speed = linear_velocity.length()
 	var distance_factor = clamp(speed/ SPEED_THRESHOLD, 0.0, 1.0)
 	var target_camera_distance = lerp(BASE_CAMERA_DISTANCE, MAX_CAMERA_DISTANCE, distance_factor)
-	camera.position.z=lerp(camera.position.z, -target_camera_distance, CAMERA_LERP_SPEED)
 	
+	var lateral_offset = steering * CAMERA_LATERAL_OFFSET  # Wartość dodatnia lub ujemna, w zależności od kierunku skrętu
+	var target_camera_position = camera.position
+	var target_x = lateral_offset  # Docelowa pozycja X kamery
+	
+	target_camera_position.z=lerp(camera.position.z, -target_camera_distance, CAMERA_LERP_SPEED)
+	target_camera_position.x = lerp(camera.position.x, target_x, CAMERA_LERP_SPEED)  # Zmiana pozycji X kamery na podstawie skrętu
+	
+	camera.position = target_camera_position
 func _speed_limit() -> void:
 	var speed = linear_velocity.length()
 	  # Convert km/h to m/s (50 km/h ≈ 13.89 m/s)
