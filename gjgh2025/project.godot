@@ -10,11 +10,11 @@ config_version=5
 
 [application]
 
-config/name="GJGH2025"
+config/name="CarInka"
 run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 boot_splash/image="res://Images/ciasne14.png"
-config/icon="res://Images/icon.svg"
+config/icon="res://Images/carinkaico.png"
 
 [autoload]
 
