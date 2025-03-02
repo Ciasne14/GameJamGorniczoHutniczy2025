@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Scripts/character_male_a.gd" id="3_p4f70"]
 [ext_resource type="Script" path="res://Scripts/Crossing.gd" id="4_7k3ra"]
 [ext_resource type="PackedScene" uid="uid://b1vwbxl0y7sdr" path="res://Scenes/wheelchair.tscn" id="5_pabvu"]
-[ext_resource type="AudioStream" uid="uid://bp1cr7fud1aun" path="res://death.mp3" id="6_wkjfu"]
+[ext_resource type="AudioStream" uid="uid://bp1cr7fud1aun" path="res://Sounds/death.mp3" id="6_wkjfu"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eejtc"]
 size = Vector3(1, 0.707153, 0.435303)

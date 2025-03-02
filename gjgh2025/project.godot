@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="GJGH2025"
-run/main_scene="res://main_menu.tscn"
+run/main_scene="res://Scenes/main_menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-boot_splash/image="res://ciasne14.png"
-config/icon="res://icon.svg"
+boot_splash/image="res://Images/ciasne14.png"
+config/icon="res://Images/icon.svg"
 
 [autoload]
 
-Backgroundmusic="*res://backgroundmusic.tscn"
+Backgroundmusic="*res://Scenes/backgroundmusic.tscn"
 
 [input]
 

@@ -1,0 +1,71 @@
+[gd_scene load_steps=15 format=3 uid="uid://bdbovcff0aqtl"]
+
+[ext_resource type="PackedScene" uid="uid://36i6yhk58k4m" path="res://Models/samochod/nissan_gtr.tscn" id="1_wsb07"]
+[ext_resource type="PackedScene" uid="uid://6nyklck8gdk4" path="res://Scenes/starting_location.tscn" id="2_hvq05"]
+[ext_resource type="PackedScene" uid="uid://0cqfm4tqbbhm" path="res://Scenes/highway.tscn" id="3_rc6wf"]
+[ext_resource type="PackedScene" uid="uid://cxv80pqu4sa5r" path="res://Scenes/city.tscn" id="4_hltfp"]
+[ext_resource type="Texture2D" uid="uid://du4co1fhei7gk" path="res://Images/ground.jpg" id="5_kww8m"]
+[ext_resource type="Texture2D" uid="uid://dsbtvc3g3l5qt" path="res://Images/lofoten.jpeg" id="6_52y3f"]
+[ext_resource type="AudioStream" uid="uid://qtq1mhpvgr7h" path="res://Sounds/carkey.mp3" id="7_c72hm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkrtw"]
+albedo_texture = ExtResource("5_kww8m")
+grow = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_cdcpx"]
+
+[sub_resource type="Skin" id="Skin_kq531"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pvmsj"]
+size = Vector3(1054.67, 0.247314, 1364.13)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_jolr0"]
+panorama = ExtResource("6_52y3f")
+
+[sub_resource type="Sky" id="Sky_34spa"]
+sky_material = SubResource("PanoramaSkyMaterial_jolr0")
+radiance_size = 4
+
+[sub_resource type="Environment" id="Environment_k0a4q"]
+background_mode = 2
+sky = SubResource("Sky_34spa")
+sky_rotation = Vector3(-1.37008, 0, 0)
+
+[node name="Map" type="Node3D"]
+
+[node name="Nissan GTR" parent="." instance=ExtResource("1_wsb07")]
+transform = Transform3D(-0.222042, 0, 0.975037, 0, 1, 0, -0.975037, 0, -0.222042, 73.9791, 1.98134, 436.063)
+mass = 50.0
+engine_force = 300.0
+
+[node name="StartingLocation" parent="." instance=ExtResource("2_hvq05")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 85.1813, 0, 414.852)
+
+[node name="Highway" parent="." instance=ExtResource("3_rc6wf")]
+transform = Transform3D(-5.07614, 0, -14.115, 0, 15, 0, 14.115, 0, -5.07614, 188.379, -3.05176e-05, 243.384)
+
+[node name="City" parent="." instance=ExtResource("4_hltfp")]
+transform = Transform3D(5.29232, 0, 14.0354, 0, 15, 0, -14.0354, 0, 5.29232, -351.537, -0.000209808, -315.52)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1000, 0, 0, 0, 1000, 0, 0, 0, 1000, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_lkrtw")
+lod_bias = 0.001
+visibility_range_begin_margin = 429.1
+mesh = SubResource("PlaneMesh_cdcpx")
+skin = SubResource("Skin_kq531")
+skeleton = NodePath("../StaticBody3D")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_pvmsj")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_k0a4q")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -127.987, -85.7187, 439.086)
+stream = ExtResource("7_c72hm")
+volume_db = 3.0
+autoplay = true

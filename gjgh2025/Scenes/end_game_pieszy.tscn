@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://2fgunk4q1ib2"]
+
+[ext_resource type="Script" path="res://Scripts/end_game_Screen.gd" id="1_4b2q2"]
+[ext_resource type="Texture2D" uid="uid://b0eg01c1p5r68" path="res://Images/background.png" id="2_4ybyr"]
+[ext_resource type="Texture2D" uid="uid://d1t51g3nft8d7" path="res://Images/icons/notatnik2.png" id="3_ps556"]
+[ext_resource type="FontFile" uid="uid://h3r0smosk814" path="res://Images/icons/SourGummy_Expanded-Black.ttf" id="4_s41e0"]
+
+[node name="EndGamePieszy" type="CanvasLayer"]
+script = ExtResource("1_4b2q2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4ybyr")
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 276.5
+offset_top = -52.0
+offset_right = 1503.5
+offset_bottom = 842.0
+texture = ExtResource("3_ps556")
+
+[node name="Restart" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.312
+anchor_top = 0.466
+anchor_right = 0.448
+anchor_bottom = 0.548
+offset_left = -0.228027
+offset_top = -0.328003
+offset_right = 0.787964
+offset_bottom = -0.184021
+theme_override_font_sizes/font_size = 60
+text = "Restart"
+
+[node name="Menu" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.504
+anchor_top = 0.464
+anchor_right = 0.643
+anchor_bottom = 0.549
+offset_left = 0.323975
+offset_top = -0.112
+offset_right = -0.416992
+offset_bottom = -0.292053
+theme_override_font_sizes/font_size = 60
+text = "Menu"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.195
+anchor_top = 0.127
+anchor_right = 0.62
+anchor_bottom = 0.552
+offset_left = 203.795
+offset_top = 61.284
+offset_right = 110.22
+offset_bottom = -110.616
+theme_override_colors/default_color = Color(0.0117647, 0.180392, 0.286275, 1)
+theme_override_fonts/normal_font = ExtResource("4_s41e0")
+theme_override_font_sizes/normal_font_size = 34
+text = "Dojechałeś do domu, ale potrąciłeś pieszego...
+
+Jak wiadomo, elektryki są tak eko, że robia z pieszych warzywa..."
+
+[connection signal="pressed" from="TextureRect/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="TextureRect/Menu" to="." method="_on_menu_pressed"]

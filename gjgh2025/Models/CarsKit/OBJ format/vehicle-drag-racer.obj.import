@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://div6yeerfi8j7"
+path="res://.godot/imported/vehicle-drag-racer.obj-d6c7bac2649458dd25e6b5e498915920.mesh"
+
+[deps]
+
+files=["res://.godot/imported/vehicle-drag-racer.obj-d6c7bac2649458dd25e6b5e498915920.mesh"]
+
+source_file="res://Models/CarsKit/OBJ format/vehicle-drag-racer.obj"
+dest_files=["res://.godot/imported/vehicle-drag-racer.obj-d6c7bac2649458dd25e6b5e498915920.mesh", "res://.godot/imported/vehicle-drag-racer.obj-d6c7bac2649458dd25e6b5e498915920.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

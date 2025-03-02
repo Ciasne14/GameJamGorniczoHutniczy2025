@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c5lpre7dqx7fv"
+path="res://.godot/imported/vehicle-monster-truck.obj-86ff97f607bdefaa9222c8c6f4e4b315.mesh"
+
+[deps]
+
+files=["res://.godot/imported/vehicle-monster-truck.obj-86ff97f607bdefaa9222c8c6f4e4b315.mesh"]
+
+source_file="res://Models/CarsKit/OBJ format/vehicle-monster-truck.obj"
+dest_files=["res://.godot/imported/vehicle-monster-truck.obj-86ff97f607bdefaa9222c8c6f4e4b315.mesh", "res://.godot/imported/vehicle-monster-truck.obj-86ff97f607bdefaa9222c8c6f4e4b315.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

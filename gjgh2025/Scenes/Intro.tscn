@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://bloaw2s6p2a6k"]
+
+[ext_resource type="Texture2D" uid="uid://b0eg01c1p5r68" path="res://Images/background.png" id="1_exswj"]
+[ext_resource type="Script" path="res://Scripts/intro.gd" id="1_fb6f5"]
+[ext_resource type="Texture2D" uid="uid://baqmrlny3i1dj" path="res://Images/icons/notatnik.png" id="3_1qd3a"]
+[ext_resource type="FontFile" uid="uid://h3r0smosk814" path="res://Images/icons/SourGummy_Expanded-Black.ttf" id="4_5ep6l"]
+
+[node name="Intro" type="CanvasLayer"]
+script = ExtResource("1_fb6f5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_exswj")
+
+[node name="Notatka" type="TextureRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 178.5
+offset_top = -85.0
+offset_right = 1655.5
+offset_bottom = 1199.0
+texture = ExtResource("3_1qd3a")
+expand_mode = 1
+
+[node name="GoOn" type="Button" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.335
+anchor_top = 0.807
+anchor_right = 0.622
+anchor_bottom = 0.931
+offset_left = -0.36499
+offset_top = -0.156067
+offset_right = 0.881836
+offset_bottom = 0.451904
+theme_override_font_sizes/font_size = 60
+text = "Let's goooo!"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.241
+anchor_top = 0.168
+anchor_right = 0.709
+anchor_bottom = 0.678
+offset_left = 98.521
+offset_top = -2.144
+offset_right = -65.5709
+offset_bottom = 115.776
+theme_override_colors/default_color = Color(0.0117647, 0.180392, 0.286275, 1)
+theme_override_fonts/normal_font = ExtResource("4_5ep6l")
+theme_override_font_sizes/normal_font_size = 51
+text = "Zakupiłeś nowiutkiego, używanego Nissana GTR, elektryka. Wróć do siebie zanim skończy się bateria.
+
+WASD - sterowanie"
+tab_size = 9
+
+[connection signal="pressed" from="TextureRect/GoOn" to="." method="_on_go_on_pressed"]
