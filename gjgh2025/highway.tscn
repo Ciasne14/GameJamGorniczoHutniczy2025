@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://0cqfm4tqbbhm"]
+[gd_scene load_steps=11 format=3 uid="uid://0cqfm4tqbbhm"]
 
 [ext_resource type="ArrayMesh" uid="uid://cgr8nbomp282a" path="res://Models/Roadies/Models/OBJ format/road_straight.obj" id="1_fwxxo"]
 [ext_resource type="ArrayMesh" uid="uid://cjtfshq3qio84" path="res://Models/Roadies/Models/OBJ format/road_split.obj" id="2_1ebda"]
@@ -11,6 +11,9 @@
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_wbgoh"]
 size = Vector3(24.1548, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ogegw"]
+size = Vector3(1, 1, 1.97168)
 
 [node name="Highway" type="Node3D"]
 
@@ -1113,3 +1116,9 @@ mesh = ExtResource("7_kmsfi")
 [node name="Banana" type="MeshInstance3D" parent="."]
 transform = Transform3D(50, 0, 0, 0, 7.83638, 49.3821, 0, -49.3821, 7.83638, -39.7257, 7.2305, 20.3617)
 mesh = ExtResource("8_4twd7")
+
+[node name="karynka" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.74614, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="karynka"]
+shape = SubResource("BoxShape3D_ogegw")

@@ -25,3 +25,5 @@ func _process(delta):
 	
 func _on_timer_timeout() -> void:
 	$Control/HSlider2.value = $Control/HSlider2.value - 1
+	if($Control/HSlider2.value==0):
+		get_tree().change_scene_to_file("res://end_game_bateria.tscn")

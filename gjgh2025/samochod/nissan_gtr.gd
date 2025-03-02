@@ -16,6 +16,7 @@ const CAMERA_LATERAL_OFFSET = 2.0
 
 @onready var MAX_SPEED_ZONE = 120.0
 var horn_index = 0
+var pieszy_potracony = false
 var trafficIndicatorFree = true
 @onready var lewymiacz = false
 @onready var prawymiacz = false
@@ -128,9 +129,14 @@ func _on_car_collider_area_entered(area: Area3D) -> void:
 		linear_velocity=Vector3(0,0,0)
 		trafficIndicatorFree=false
 	if(area.name=="Pieszy"):
-		$Warzywo.play()
+		pieszy_potracony = true
 	if(area.name=="Finisher"):
-		get_tree().change_scene_to_file("res://end_game.tscn")
+		if(pieszy_potracony):
+			get_tree().change_scene_to_file("res://end_game_pieszy.tscn")
+		else:
+			get_tree().change_scene_to_file("res://end_game.tscn")
+	if(area.name =="karynka"):
+		$Karyna.play()
 	print(area.name) # Replace with function body.
 
 func _on_light_indicator_timeout() -> void:
